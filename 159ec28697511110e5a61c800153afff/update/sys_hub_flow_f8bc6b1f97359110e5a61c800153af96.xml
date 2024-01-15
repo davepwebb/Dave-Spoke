@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>tester</internal_name>
+        <label_cache>[{"name":"Created_1.current.cmdb_ci.name","label":"Trigger - Record Created➛Incident Record➛Configuration item➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_ci","column_name":"name"},{"name":"Created_1.current.cmdb_ci","label":"Trigger - Record Created➛Incident Record➛Configuration item","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"cmdb_ci"},{"name":"927cd736-f653-439f-9ea4-099118486466.__dont_treat_as_error__","label":"3 - Create Remote Incident - dbunity2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0d3f5323-0c7f-4728-a2b8-71a929a65039"}},{"name":"927cd736-f653-439f-9ea4-099118486466.__action_status__","label":"3 - Create Remote Incident - dbunity2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDcb0b197222aa1110444482c1c48928fd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ac6dad1f-ec97-475f-8e12-ceff8012808a"}},{"name":"927cd736-f653-439f-9ea4-099118486466.Correlation Id","label":"3 - Create Remote Incident - dbunity2➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"64d9e836-6694-4a8a-8256-cccf4334d1c8"}},{"name":"927cd736-f653-439f-9ea4-099118486466.Remote Incident Number","label":"3 - Create Remote Incident - dbunity2➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7436cf41-eb54-4727-8cfd-7c1ec5046309"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.__dont_treat_as_error__","label":"3 - Create Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.__action_status__","label":"3 - Create Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.Correlation Id","label":"3 - Create Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.Remote Incident Number","label":"3 - Create Remote Incident➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Record.can_print","label":"1 - Look Up Record➛Configuration Item Record➛Can Print","reference":"","reference_display":"Can Print","type":"boolean","base_type":"boolean","parent_table_name":"cmdb_ci","column_name":"can_print"},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Record.managed_by.active","label":"1 - Look Up Record➛Configuration Item Record➛Managed by➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"sys_user","column_name":"active"},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.__dont_treat_as_error__","label":"7 - Create Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.__action_status__","label":"7 - Create Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.Correlation Id","label":"7 - Create Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.Remote Incident Number","label":"7 - Create Remote Incident➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.__dont_treat_as_error__","label":"5 - Create Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.__action_status__","label":"5 - Create Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.Correlation Id","label":"5 - Create Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.Remote Incident Number","label":"5 - Create Remote Incident➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3060148e-5de3-48cd-a244-2284be013993.__dont_treat_as_error__","label":"4 - Update Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3060148e-5de3-48cd-a244-2284be013993.__action_status__","label":"4 - Update Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3060148e-5de3-48cd-a244-2284be013993.Status","label":"4 - Update Remote Incident➛Status","reference_display":"Status","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.__action_status__.code","label":"2➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"Created or Updated_1.current.correlation_id","label":"Trigger - Record Created or Updated➛Incident Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"incident","column_name":"correlation_id"},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.__dont_treat_as_error__","label":"2 - Lookup Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.__action_status__","label":"2 - Lookup Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Contact Type","label":"2 - Lookup Remote Incident➛Contact Type","reference_display":"Contact Type","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Assignment group","label":"2 - Lookup Remote Incident➛Assignment group","reference_display":"Assignment group","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Assigned To","label":"2 - Lookup Remote Incident➛Assigned To","reference_display":"Assigned To","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Configuration Item","label":"2 - Lookup Remote Incident➛Configuration Item","reference_display":"Configuration Item","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Urgency","label":"2 - Lookup Remote Incident➛Urgency","reference_display":"Urgency","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Impact","label":"2 - Lookup Remote Incident➛Impact","reference_display":"Impact","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Subcategory","label":"2 - Lookup Remote Incident➛Subcategory","reference_display":"Subcategory","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Category","label":"2 - Lookup Remote Incident➛Category","reference_display":"Category","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Business Service","label":"2 - Lookup Remote Incident➛Business Service","reference_display":"Business Service","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Caller Id","label":"2 - Lookup Remote Incident➛Caller Id","reference_display":"Caller Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.State","label":"2 - Lookup Remote Incident➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Description","label":"2 - Lookup Remote Incident➛Description","reference_display":"Description","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Correlation Id","label":"2 - Lookup Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Short Description","label":"2 - Lookup Remote Incident➛Short Description","reference_display":"Short Description","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_created_by","label":"Trigger - Record Created or Updated➛Incident Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"incident","column_name":"sys_created_by"},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Record","label":"1 - Look Up Record➛Configuration Item Record","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Table","label":"1 - Look Up Record➛Configuration Item Table","reference":"cmdb_ci","reference_display":"Configuration Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.record","label":"6 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.table_name","label":"6 - Update Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"86bd610c-accc-4b21-9600-fcd4bf6b71c8.__status__","label":"5 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.record","label":"5 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.table_name","label":"5 - Update Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"86bd610c-accc-4b21-9600-fcd4bf6b71c8.__status__.message","label":"5 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master_snapshot>2a712d3297ea1110e5a61c800153af08</master_snapshot>
+        <name>Create Remote Incident for Netcool</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5f544ecb9722d110e5a61c800153af1f</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 11:18:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8bc6b1f97359110e5a61c800153af96</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Create Remote Incident for Netcool</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_hub_flow_f8bc6b1f97359110e5a61c800153af96</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:17</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="incident">sys_created_by=fpa_interface<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="fpa_interface"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 15:51:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f544ecb9722d110e5a61c800153af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:16</sys_updated_on>
+        <table>incident</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"1b544ecb9722d110e5a61c800153af20","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>f8bc6b1f97359110e5a61c800153af96</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 15:51:16</sys_created_on>
+        <sys_id>1b544ecb9722d110e5a61c800153af20</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:16</sys_updated_on>
+        <trigger display_value="">5f544ecb9722d110e5a61c800153af1f</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>1b544ecb9722d110e5a61c800153af20</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-19 15:51:16</sys_created_on>
+        <sys_id>df544ecb9722d110e5a61c800153af20</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN1b544ecb9722d110e5a61c800153af20"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN2db2c67197a2d110e5a61c800153afa6"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>When Netcool Creates a New Incident, create an eBond in the Remote Instance (if it is managed there)</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>2db2c67197a2d110e5a61c800153afa6</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:17</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2db2c67197a2d110e5a61c800153afa6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2db2c67197a2d110e5a61c800153afa6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>21b2c67197a2d110e5a61c800153afa8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:21:15</sys_updated_on>
+        <value>sys_created_by=fpa_interface</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2db2c67197a2d110e5a61c800153afa6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>69b2c67197a2d110e5a61c800153afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 18:31:39</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN78bc6b1f97359110e5a61c800153af97"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f8bc6b1f97359110e5a61c800153af96</id>
+        <name>tester</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 11:18:30</sys_created_on>
+        <sys_id>78bc6b1f97359110e5a61c800153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 11:18:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=78bc6b1f97359110e5a61c800153af97"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN9e3914e997e21110e5a61c800153af61,de3914e997e21110e5a61c800153afa8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</model>
+        <model_id>f8bc6b1f97359110e5a61c800153af96</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f8bc6b1f97359110e5a61c800153af96</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-14 16:12:17</sys_created_on>
+        <sys_id>9e3914e997e21110e5a61c800153af61</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9e3914e997e21110e5a61c800153af61"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</model>
+        <model_id>f8bc6b1f97359110e5a61c800153af96</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f8bc6b1f97359110e5a61c800153af96</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-14 16:12:18</sys_created_on>
+        <sys_id>de3914e997e21110e5a61c800153afa8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=de3914e997e21110e5a61c800153afa8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN2db2c67197a2d110e5a61c800153afb0,436e027d97e2d110e5a61c800153af39,ed2c113697aa1110e5a61c800153af88"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Find out if the CI is Managed By the Remote Instance</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <order>1</order>
+        <parent_ui_id>fbe27700-f4bb-47d0-8560-bad44756e925</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>2db2c67197a2d110e5a61c800153afb0</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:30:29</sys_updated_on>
+        <ui_id>c6dc0702-9680-45af-b502-1120fcbda0f9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2db2c67197a2d110e5a61c800153afb0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2db2c67197a2d110e5a61c800153afb0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>61b2c67197a2d110e5a61c800153afb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 18:31:39</sys_updated_on>
+        <value>cmdb_ci</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2db2c67197a2d110e5a61c800153afb0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>adb2c67197a2d110e5a61c800153afb3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 19:12:32</sys_updated_on>
+        <value/>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2db2c67197a2d110e5a61c800153afb0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2db2c67197a2d110e5a61c800153afb0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>65b2c67197a2d110e5a61c800153afb3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:38:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>name={{Created_1.current.cmdb_ci.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2db2c67197a2d110e5a61c800153afb0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 18:31:39</sys_created_on>
+        <sys_id>2db2c67197a2d110e5a61c800153afb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 18:31:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2db2c67197a2d110e5a61c800153afb0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2db2c67197a2d110e5a61c800153afb0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Something went wrong with the eBonding - write to the journal of the existing ticket</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <order>6</order>
+        <parent_ui_id>86bd610c-accc-4b21-9600-fcd4bf6b71c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>436e027d97e2d110e5a61c800153af39</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:30:29</sys_updated_on>
+        <ui_id>e5482026-b586-4d94-9c41-535e99f46497</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=436e027d97e2d110e5a61c800153af39"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>436e027d97e2d110e5a61c800153af39</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>8b6e027d97e2d110e5a61c800153af3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 19:22:49</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=436e027d97e2d110e5a61c800153af39"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>436e027d97e2d110e5a61c800153af39</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>476e027d97e2d110e5a61c800153af3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 19:22:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>436e027d97e2d110e5a61c800153af39</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>836e027d97e2d110e5a61c800153af3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 19:22:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>436e027d97e2d110e5a61c800153af39</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>0b6e027d97e2d110e5a61c800153af3a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments_and_work_notes=FD - Unable to create Remote Incident Ticket:
+{{86bd610c-accc-4b21-9600-fcd4bf6b71c8.__status__.message}}
+</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=436e027d97e2d110e5a61c800153af39"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=436e027d97e2d110e5a61c800153af39"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Remote Incident">b60b197297aa1110e5a61c800153af85</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Create an eBonded ticket - custom action, does NOT update the correlation ID field (needs to remain as provided by Netcool)</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <order>3</order>
+        <parent_ui_id>d07c0d96-13d7-43d5-8e5b-0bbfd31c24af</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:17:05</sys_created_on>
+        <sys_id>ed2c113697aa1110e5a61c800153af88</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:30:29</sys_updated_on>
+        <ui_id>927cd736-f653-439f-9ea4-099118486466</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ed2c113697aa1110e5a61c800153af88"/>
+    <sys_element_mapping action="delete_multiple" query="id=ed2c113697aa1110e5a61c800153af88"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_incident</field>
+        <id>ed2c113697aa1110e5a61c800153af88</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:17:05</sys_created_on>
+        <sys_id>292c113697aa1110e5a61c800153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:17:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b60b197297aa1110e5a61c800153af85</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ed2c113697aa1110e5a61c800153af88"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ed2c113697aa1110e5a61c800153af88"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN0f6e027d97e2d110e5a61c800153af0f,4f6e027d97e2d110e5a61c800153af31,681c023997e2d110e5a61c800153af06,876e027d97e2d110e5a61c800153af2f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">076e027d97e2d110e5a61c800153af0f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>0f6e027d97e2d110e5a61c800153af0f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:17</sys_updated_on>
+        <ui_id>fbe27700-f4bb-47d0-8560-bad44756e925</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0f6e027d97e2d110e5a61c800153af0f"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0f6e027d97e2d110e5a61c800153af0f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0f6e027d97e2d110e5a61c800153af0f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8b6e027d97e2d110e5a61c800153af31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>4f6e027d97e2d110e5a61c800153af31</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:17</sys_updated_on>
+        <ui_id>86bd610c-accc-4b21-9600-fcd4bf6b71c8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4f6e027d97e2d110e5a61c800153af31"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4f6e027d97e2d110e5a61c800153af31</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>436e027d97e2d110e5a61c800153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 19:22:49</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4f6e027d97e2d110e5a61c800153af31</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>8f6e027d97e2d110e5a61c800153af34</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:17:06</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=4f6e027d97e2d110e5a61c800153af31"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4f6e027d97e2d110e5a61c800153af31"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f6e027d97e2d110e5a61c800153af31"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">601c023997e2d110e5a61c800153af06</block>
+        <comment>For the purposes of testing, using the "Can Print" boolean, but would be dbunity2 true/false boolean indicator</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fbe27700-f4bb-47d0-8560-bad44756e925</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:12:33</sys_created_on>
+        <sys_id>681c023997e2d110e5a61c800153af06</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:17</sys_updated_on>
+        <ui_id>d07c0d96-13d7-43d5-8e5b-0bbfd31c24af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=681c023997e2d110e5a61c800153af06"/>
+    <sys_element_mapping action="delete_multiple" query="id=681c023997e2d110e5a61c800153af06"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>681c023997e2d110e5a61c800153af06</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:12:33</sys_created_on>
+        <sys_id>a01c023997e2d110e5a61c800153af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-15 19:12:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{c6dc0702-9680-45af-b502-1120fcbda0f9.Record.can_print}}=true</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=681c023997e2d110e5a61c800153af06"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=681c023997e2d110e5a61c800153af06"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c36e027d97e2d110e5a61c800153af2f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>d07c0d96-13d7-43d5-8e5b-0bbfd31c24af</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-15 19:22:49</sys_created_on>
+        <sys_id>876e027d97e2d110e5a61c800153af2f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:17</sys_updated_on>
+        <ui_id>db9a19e6-f0bb-4b7e-900a-12d1be1d71fe</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=876e027d97e2d110e5a61c800153af2f"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=876e027d97e2d110e5a61c800153af2f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=876e027d97e2d110e5a61c800153af2f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f8bc6b1f97359110e5a61c800153af96^sys_idNOT IN663914e997e21110e5a61c800153afab,963914e997e21110e5a61c800153af66"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f8bc6b1f97359110e5a61c800153af96</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-14 16:12:18</sys_created_on>
+        <sys_id>663914e997e21110e5a61c800153afab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-14 16:12:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f8bc6b1f97359110e5a61c800153af96</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-14 16:12:18</sys_created_on>
+        <sys_id>963914e997e21110e5a61c800153af66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-14 16:12:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f8bc6b1f97359110e5a61c800153af96"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_remote_incident_for_netcool</internal_name>
+        <label_cache>[{"name":"Created_1.current.cmdb_ci.name","label":"Trigger - Record Created➛Incident Record➛Configuration item➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_ci","column_name":"name"},{"name":"Created_1.current.cmdb_ci","label":"Trigger - Record Created➛Incident Record➛Configuration item","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"cmdb_ci"},{"name":"927cd736-f653-439f-9ea4-099118486466.__dont_treat_as_error__","label":"3 - Create Remote Incident - dbunity2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0d3f5323-0c7f-4728-a2b8-71a929a65039"}},{"name":"927cd736-f653-439f-9ea4-099118486466.__action_status__","label":"3 - Create Remote Incident - dbunity2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDcb0b197222aa1110444482c1c48928fd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ac6dad1f-ec97-475f-8e12-ceff8012808a"}},{"name":"927cd736-f653-439f-9ea4-099118486466.Correlation Id","label":"3 - Create Remote Incident - dbunity2➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"64d9e836-6694-4a8a-8256-cccf4334d1c8"}},{"name":"927cd736-f653-439f-9ea4-099118486466.Remote Incident Number","label":"3 - Create Remote Incident - dbunity2➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7436cf41-eb54-4727-8cfd-7c1ec5046309"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.__dont_treat_as_error__","label":"3 - Create Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.__action_status__","label":"3 - Create Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.Correlation Id","label":"3 - Create Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ac2ddd-5c00-452d-a9ee-0b679f3d4547.Remote Incident Number","label":"3 - Create Remote Incident➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Record.can_print","label":"1 - Look Up Record➛Configuration Item Record➛Can Print","reference":"","reference_display":"Can Print","type":"boolean","base_type":"boolean","parent_table_name":"cmdb_ci","column_name":"can_print"},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Record.managed_by.active","label":"1 - Look Up Record➛Configuration Item Record➛Managed by➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"sys_user","column_name":"active"},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.__dont_treat_as_error__","label":"7 - Create Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.__action_status__","label":"7 - Create Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.Correlation Id","label":"7 - Create Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6cf5e-4e05-4443-b07b-cf6a78e4f8fb.Remote Incident Number","label":"7 - Create Remote Incident➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.__dont_treat_as_error__","label":"5 - Create Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.__action_status__","label":"5 - Create Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.Correlation Id","label":"5 - Create Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7af29be-4bf8-48f1-9d44-8387400e71c1.Remote Incident Number","label":"5 - Create Remote Incident➛Remote Incident Number","reference_display":"Remote Incident Number","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3060148e-5de3-48cd-a244-2284be013993.__dont_treat_as_error__","label":"4 - Update Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3060148e-5de3-48cd-a244-2284be013993.__action_status__","label":"4 - Update Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3060148e-5de3-48cd-a244-2284be013993.Status","label":"4 - Update Remote Incident➛Status","reference_display":"Status","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.__action_status__.code","label":"2➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"Created or Updated_1.current.correlation_id","label":"Trigger - Record Created or Updated➛Incident Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"incident","column_name":"correlation_id"},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.__dont_treat_as_error__","label":"2 - Lookup Remote Incident➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.__action_status__","label":"2 - Lookup Remote Incident➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Contact Type","label":"2 - Lookup Remote Incident➛Contact Type","reference_display":"Contact Type","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Assignment group","label":"2 - Lookup Remote Incident➛Assignment group","reference_display":"Assignment group","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Assigned To","label":"2 - Lookup Remote Incident➛Assigned To","reference_display":"Assigned To","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Configuration Item","label":"2 - Lookup Remote Incident➛Configuration Item","reference_display":"Configuration Item","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Urgency","label":"2 - Lookup Remote Incident➛Urgency","reference_display":"Urgency","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Impact","label":"2 - Lookup Remote Incident➛Impact","reference_display":"Impact","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Subcategory","label":"2 - Lookup Remote Incident➛Subcategory","reference_display":"Subcategory","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Category","label":"2 - Lookup Remote Incident➛Category","reference_display":"Category","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Business Service","label":"2 - Lookup Remote Incident➛Business Service","reference_display":"Business Service","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Caller Id","label":"2 - Lookup Remote Incident➛Caller Id","reference_display":"Caller Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.State","label":"2 - Lookup Remote Incident➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Description","label":"2 - Lookup Remote Incident➛Description","reference_display":"Description","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Correlation Id","label":"2 - Lookup Remote Incident➛Correlation Id","reference_display":"Correlation Id","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef8f7b34-26cd-4ea8-b6b4-a50bebe75174.Short Description","label":"2 - Lookup Remote Incident➛Short Description","reference_display":"Short Description","type":"string","base_type":"string","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_created_by","label":"Trigger - Record Created or Updated➛Incident Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"incident","column_name":"sys_created_by"},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Record","label":"1 - Look Up Record➛Configuration Item Record","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.Table","label":"1 - Look Up Record➛Configuration Item Table","reference":"cmdb_ci","reference_display":"Configuration Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c6dc0702-9680-45af-b502-1120fcbda0f9.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.record","label":"6 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.table_name","label":"6 - Update Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"ac040cf1-7732-469a-ab0e-095bee71ed77.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c0f3f4d-bb68-404c-ab4c-fed99b8c0d66.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"86bd610c-accc-4b21-9600-fcd4bf6b71c8.__status__","label":"5 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.record","label":"5 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.table_name","label":"5 - Update Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e5482026-b586-4d94-9c41-535e99f46497.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"86bd610c-accc-4b21-9600-fcd4bf6b71c8.__status__.message","label":"5 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Create Remote Incident for Netcool</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Remote Incident for Netcool">f8bc6b1f97359110e5a61c800153af96</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2a712d3297ea1110e5a61c800153af08</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=2a712d3297ea1110e5a61c800153af08^sys_idNOT IN4f712d3297ea1110e5a61c800153afb7"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>When Netcool Creates a New Incident, create an eBond in the Remote Instance (if it is managed there)</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>4f712d3297ea1110e5a61c800153afb7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:16</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4f712d3297ea1110e5a61c800153afb7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4f712d3297ea1110e5a61c800153afb7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>8b712d3297ea1110e5a61c800153afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:24</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4f712d3297ea1110e5a61c800153afb7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>c7712d3297ea1110e5a61c800153afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:24</sys_updated_on>
+        <value>sys_created_by=fpa_interface</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2a712d3297ea1110e5a61c800153af08^sys_idNOT IN6e712d3297ea1110e5a61c800153af09"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2a712d3297ea1110e5a61c800153af08</id>
+        <name>Create Remote Incident for Netcool</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:22</sys_created_on>
+        <sys_id>6e712d3297ea1110e5a61c800153af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6e712d3297ea1110e5a61c800153af09"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2a712d3297ea1110e5a61c800153af08^sys_idNOT IN36712d3297ea1110e5a61c800153af57,e2712d3297ea1110e5a61c800153af0b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</model>
+        <model_id>2a712d3297ea1110e5a61c800153af08</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2a712d3297ea1110e5a61c800153af08</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:22</sys_created_on>
+        <sys_id>36712d3297ea1110e5a61c800153af57</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=36712d3297ea1110e5a61c800153af57"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</model>
+        <model_id>2a712d3297ea1110e5a61c800153af08</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2a712d3297ea1110e5a61c800153af08</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:22</sys_created_on>
+        <sys_id>e2712d3297ea1110e5a61c800153af0b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e2712d3297ea1110e5a61c800153af0b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=2a712d3297ea1110e5a61c800153af08^sys_idNOT IN72712d3297ea1110e5a61c800153afaf,76712d3297ea1110e5a61c800153af79,8b712d3297ea1110e5a61c800153afb5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Remote Incident">b60b197297aa1110e5a61c800153af85</action_type>
+        <action_type_parent display_value="Create Remote Incident">78d4524e97221110e5a61c800153af13</action_type_parent>
+        <attributes/>
+        <comment>Create an eBonded ticket - custom action, does NOT update the correlation ID field (needs to remain as provided by Netcool)</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <order>3</order>
+        <parent_ui_id>d07c0d96-13d7-43d5-8e5b-0bbfd31c24af</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>72712d3297ea1110e5a61c800153afaf</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>927cd736-f653-439f-9ea4-099118486466</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=72712d3297ea1110e5a61c800153afaf"/>
+    <sys_element_mapping action="delete_multiple" query="id=72712d3297ea1110e5a61c800153afaf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_incident</field>
+        <id>72712d3297ea1110e5a61c800153afaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>83712d3297ea1110e5a61c800153afb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b60b197297aa1110e5a61c800153af85</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=72712d3297ea1110e5a61c800153afaf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=72712d3297ea1110e5a61c800153afaf"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>Find out if the CI is Managed By the Remote Instance</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <order>1</order>
+        <parent_ui_id>fbe27700-f4bb-47d0-8560-bad44756e925</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>76712d3297ea1110e5a61c800153af79</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>c6dc0702-9680-45af-b502-1120fcbda0f9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=76712d3297ea1110e5a61c800153af79"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>76712d3297ea1110e5a61c800153af79</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>ba712d3297ea1110e5a61c800153af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <value>cmdb_ci</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=76712d3297ea1110e5a61c800153af79"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>76712d3297ea1110e5a61c800153af79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>76712d3297ea1110e5a61c800153af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>name={{Created_1.current.cmdb_ci.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>76712d3297ea1110e5a61c800153af79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>3a712d3297ea1110e5a61c800153af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=76712d3297ea1110e5a61c800153af79"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=76712d3297ea1110e5a61c800153af79"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Something went wrong with the eBonding - write to the journal of the existing ticket</comment>
+        <display_text/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <order>6</order>
+        <parent_ui_id>86bd610c-accc-4b21-9600-fcd4bf6b71c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>8b712d3297ea1110e5a61c800153afb5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>e5482026-b586-4d94-9c41-535e99f46497</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8b712d3297ea1110e5a61c800153afb5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8b712d3297ea1110e5a61c800153afb5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>c7712d3297ea1110e5a61c800153afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:24</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8b712d3297ea1110e5a61c800153afb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8b712d3297ea1110e5a61c800153afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>83712d3297ea1110e5a61c800153afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8b712d3297ea1110e5a61c800153afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>cf712d3297ea1110e5a61c800153afb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8b712d3297ea1110e5a61c800153afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:24</sys_created_on>
+        <sys_id>47712d3297ea1110e5a61c800153afb7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments_and_work_notes=FD - Unable to create Remote Incident Ticket:
+{{86bd610c-accc-4b21-9600-fcd4bf6b71c8.__status__.message}}
+</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8b712d3297ea1110e5a61c800153afb5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b712d3297ea1110e5a61c800153afb5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=2a712d3297ea1110e5a61c800153af08^sys_idNOT IN36712d3297ea1110e5a61c800153af62,7e712d3297ea1110e5a61c800153af6b,f2712d3297ea1110e5a61c800153af65,f2712d3297ea1110e5a61c800153af69"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">076e027d97e2d110e5a61c800153af0f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>36712d3297ea1110e5a61c800153af62</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>fbe27700-f4bb-47d0-8560-bad44756e925</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=36712d3297ea1110e5a61c800153af62"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=36712d3297ea1110e5a61c800153af62"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=36712d3297ea1110e5a61c800153af62"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8b6e027d97e2d110e5a61c800153af31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>7e712d3297ea1110e5a61c800153af6b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>86bd610c-accc-4b21-9600-fcd4bf6b71c8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7e712d3297ea1110e5a61c800153af6b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7e712d3297ea1110e5a61c800153af6b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>b2712d3297ea1110e5a61c800153af6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7e712d3297ea1110e5a61c800153af6b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>ba712d3297ea1110e5a61c800153af6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=7e712d3297ea1110e5a61c800153af6b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7e712d3297ea1110e5a61c800153af6b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7e712d3297ea1110e5a61c800153af6b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">601c023997e2d110e5a61c800153af06</block>
+        <comment>For the purposes of testing, using the "Can Print" boolean, but would be dbunity2 true/false boolean indicator</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fbe27700-f4bb-47d0-8560-bad44756e925</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>f2712d3297ea1110e5a61c800153af65</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>d07c0d96-13d7-43d5-8e5b-0bbfd31c24af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f2712d3297ea1110e5a61c800153af65"/>
+    <sys_element_mapping action="delete_multiple" query="id=f2712d3297ea1110e5a61c800153af65"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f2712d3297ea1110e5a61c800153af65</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>b6712d3297ea1110e5a61c800153af68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{c6dc0702-9680-45af-b502-1120fcbda0f9.Record.can_print}}=true</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f2712d3297ea1110e5a61c800153af65"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f2712d3297ea1110e5a61c800153af65"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c36e027d97e2d110e5a61c800153af2f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Remote Incident for Netcool">2a712d3297ea1110e5a61c800153af08</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>d07c0d96-13d7-43d5-8e5b-0bbfd31c24af</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>f2712d3297ea1110e5a61c800153af69</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:14</sys_updated_on>
+        <ui_id>db9a19e6-f0bb-4b7e-900a-12d1be1d71fe</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f2712d3297ea1110e5a61c800153af69"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f2712d3297ea1110e5a61c800153af69"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f2712d3297ea1110e5a61c800153af69"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2a712d3297ea1110e5a61c800153af08"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2a712d3297ea1110e5a61c800153af08^sys_idNOT IN3e712d3297ea1110e5a61c800153af5b,fe712d3297ea1110e5a61c800153af53"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2a712d3297ea1110e5a61c800153af08</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:23</sys_created_on>
+        <sys_id>3e712d3297ea1110e5a61c800153af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2a712d3297ea1110e5a61c800153af08</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:22</sys_created_on>
+        <sys_id>fe712d3297ea1110e5a61c800153af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-18 18:40:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2a712d3297ea1110e5a61c800153af08"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_2a712d3297ea1110e5a61c800153af08"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2a712d3297ea1110e5a61c800153af08"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f8bc6b1f97359110e5a61c800153af96</sys_id>
+        <latest_snapshot>2a712d3297ea1110e5a61c800153af08</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch4a-01-03-2023_01-11-2023_0813.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f8bc6b1f97359110e5a61c800153af96^sys_idNOT INe3716d3297ea1110e5a61c800153afb9"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e3716d3297ea1110e5a61c800153afb9","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f8bc6b1f97359110e5a61c800153af96</plan_id>
+        <snapshot>b836103c97722110e5a61c800153afe0</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-18 18:40:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3716d3297ea1110e5a61c800153afb9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-19 15:51:16</sys_updated_on>
+        <trigger display_value="">5f544ecb9722d110e5a61c800153af1f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f8bc6b1f97359110e5a61c800153af96"/>
+</record_update>

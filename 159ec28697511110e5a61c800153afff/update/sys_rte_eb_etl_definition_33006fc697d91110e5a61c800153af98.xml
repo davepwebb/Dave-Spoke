@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_definition">
+    <sys_rte_eb_etl_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>true</copy_empty_fields>
+        <description>ETL definition for Get Some Remote Data</description>
+        <name>Get Some Remote Data_etl_ihub</name>
+        <on_after_script><![CDATA[(function onAfter(source, target, importLog) {
+
+	// Add your on after code here
+
+})(source, target, importLog);]]></on_after_script>
+        <on_after_script_bool>false</on_after_script_bool>
+        <on_before_script><![CDATA[(function onBefore(source, target, importLog) {
+
+	// Add your on before code here
+
+})(source, target, importLog);]]></on_before_script>
+        <on_before_script_bool>false</on_before_script_bool>
+        <sys_class_name>sys_rte_eb_etl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-15 16:39:29</sys_created_on>
+        <sys_id>33006fc697d91110e5a61c800153af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Some Remote Data_etl_ihub</sys_name>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_definition_33006fc697d91110e5a61c800153af98</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-15 16:39:29</sys_updated_on>
+    </sys_rte_eb_etl_definition>
+</record_update>

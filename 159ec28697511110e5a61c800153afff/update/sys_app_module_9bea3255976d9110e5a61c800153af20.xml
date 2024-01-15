@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Remote Instance Data">5fea3255976d9110e5a61c800153af1c</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Remote Instance Data</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_520111_dave_spok_remote_instance_data</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_520111_dave_spok.remote_instance_data_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 16:17:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9bea3255976d9110e5a61c800153af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remote Instance Data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_app_module_9bea3255976d9110e5a61c800153af20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 16:17:30</sys_updated_on>
+        <timeline_page/>
+        <title>Remote Instance Data</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

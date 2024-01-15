@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_template_input_detail">
+    <sys_app_template_input_detail action="INSERT_OR_UPDATE">
+        <condition/>
+        <configuration_id/>
+        <order>200</order>
+        <referenced_table>sys_app_template_spoke_configuration</referenced_table>
+        <sys_class_name>sys_app_template_input_detail</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 14:14:59</sys_created_on>
+        <sys_id>0ea298f097722110e5a61c800153afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_app_template_input_detail_0ea298f097722110e5a61c800153afc4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:14:59</sys_updated_on>
+        <template_input display_value="flow_description">13a439faff32101088e94ee9453bf17b</template_input>
+        <template_page display_value="Flow page">8ea298f097722110e5a61c800153afbf</template_page>
+    </sys_app_template_input_detail>
+</record_update>

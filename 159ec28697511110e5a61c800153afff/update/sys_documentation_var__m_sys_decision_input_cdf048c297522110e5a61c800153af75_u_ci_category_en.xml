@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_ci_category" label="CI Category" language="en" table="var__m_sys_decision_input_cdf048c297522110e5a61c800153af75">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_ci_category</element>
+            <help/>
+            <hint/>
+            <label>CI Category</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_cdf048c297522110e5a61c800153af75</name>
+            <plural>CI Category</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-20 13:43:08</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CI Category</sys_name>
+            <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_input_cdf048c297522110e5a61c800153af75_u_ci_category_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-20 13:43:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

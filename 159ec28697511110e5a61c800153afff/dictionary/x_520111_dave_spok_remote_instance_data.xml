@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f1ba7a15976d9110e5a61c800153afda" label="Remote Instance Data" max_length="40" name="x_520111_dave_spok_remote_instance_data" type="collection">
+        <element label="Number" max_length="30" name="number" type="string"/>
+        <element label="Short Description" max_length="500" name="short_description" type="string"/>
+    </element>
+</database>

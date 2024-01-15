@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_robust_import_set_transformer">
+    <sys_robust_import_set_transformer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_size>10</batch_size>
+        <description>RTE definition for Get Instance Data</description>
+        <name>Get Instance Data_rte_ihub</name>
+        <properties/>
+        <robust_transform_engine display_value="Get Instance Data_etl_ihub">782c7655976d9110e5a61c800153afeb</robust_transform_engine>
+        <source_table>x_520111_dave_spok_ihub_import_9ea2bf0e975d1110e5a61c800153af64</source_table>
+        <sys_class_name>sys_robust_import_set_transformer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 16:22:47</sys_created_on>
+        <sys_id>f82c7655976d9110e5a61c800153afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Instance Data_rte_ihub</sys_name>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_robust_import_set_transformer_f82c7655976d9110e5a61c800153afed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 16:22:47</sys_updated_on>
+        <verbose>false</verbose>
+    </sys_robust_import_set_transformer>
+</record_update>

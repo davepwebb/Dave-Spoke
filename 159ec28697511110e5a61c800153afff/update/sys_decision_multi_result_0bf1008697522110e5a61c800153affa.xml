@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Issue Management Rule Engine Logic">cdf048c297522110e5a61c800153af75</decision_table>
+        <label>Assignment Group: Application Portfolio Owner, Issue Manager: Application Portfolio Owner</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 13:43:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0bf1008697522110e5a61c800153affa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assignment Group: Application Portfolio Owner, Issue Manager: Application Portfolio Owner</sys_name>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_decision_multi_result_0bf1008697522110e5a61c800153affa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 13:43:11</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=0bf1008697522110e5a61c800153affa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>0bf1008697522110e5a61c800153affa</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 13:43:11</sys_created_on>
+        <sys_id>87f1008697522110e5a61c800153affb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 13:43:11</sys_updated_on>
+        <value>Application Portfolio Owner</value>
+        <variable display_value="Issue Manager">7ef1008697522110e5a61c800153af8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>0bf1008697522110e5a61c800153affa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 13:43:11</sys_created_on>
+        <sys_id>cff1008697522110e5a61c800153affb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 13:43:11</sys_updated_on>
+        <value>Application Portfolio Owner</value>
+        <variable display_value="Assignment Group">baf1008697522110e5a61c800153af31</variable>
+    </sys_variable_value>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_entity">
+    <sys_rte_eb_etl_entity action="INSERT_OR_UPDATE">
+        <child_id_field/>
+        <name>Target_x_520111_dave_spok_remote_instance_data</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>x_520111_dave_spok_remote_instance_data</path>
+        <run_business_rules>false</run_business_rules>
+        <synchronize_inserts>false</synchronize_inserts>
+        <sys_class_name>sys_rte_eb_etl_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 16:22:48</sys_created_on>
+        <sys_id>c52c7ad5976d9110e5a61c800153af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target_x_520111_dave_spok_remote_instance_data</sys_name>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Get Instance Data_etl_ihub">782c7655976d9110e5a61c800153afeb</sys_rte_eb_definition>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_entity_c52c7ad5976d9110e5a61c800153af89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 16:22:48</sys_updated_on>
+        <table>x_520111_dave_spok_remote_instance_data</table>
+    </sys_rte_eb_etl_entity>
+</record_update>

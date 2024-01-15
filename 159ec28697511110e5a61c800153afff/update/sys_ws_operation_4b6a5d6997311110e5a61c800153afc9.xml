@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>incidentit01</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+		
+	// This is an example of a Scripted REST API "stub" which defines the inputs and outputs of a call into a 
+	// subflow.
+	// The main purpose is to put the complex logic within a subflow (low/no-code) rather than building tons
+	// of complex code in Javascript
+
+	response.setContentType('application/json');
+	
+	try {
+	
+		var error = 'Unknown error';
+		response.setStatus(200);
+		response.setBody(result);
+
+		var params = request.queryParams;
+		var ticket_id = params.ticket_id || null;
+		var user_id = params.user_id || null;
+		var ci_identifier = params.ci_identifier || null;
+		var ci_type = params.ci_type || null;
+		var debug = params.debug;
+				
+//		if( !ticket_id || !user_id || !ci_identifier ) {
+	//		error = 'Mandatory parameters ticket_id, user_id and ci_identifier must be specified';
+//			response.setError(throwError(400, error));
+//			return;
+//		}
+		
+		var inputs = {};
+		inputs['ticket_id'] = String(ticket_id); // String 
+		inputs['user_id'] = String(user_id); // String 
+		inputs['ci_identifier'] = String(ci_identifier); // String 
+		inputs['ci_type'] = String(ci_type) ; // String 
+		inputs['debug'] = params.debug; // True/False 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('x_520111_dave_spok.scripted_rest_api_test').inBackground().withInputs(inputs).run();
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_520111_dave_spok.scripted_rest_api_test').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+		
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+
+		return outputs; 
+		
+	} catch(err) {
+		response.setError(throwError(500, err));
+		return;
+	}
+
+		function throwError(status, errMsg) {
+		var genericError = new sn_ws_err.ServiceError();
+		genericError.setStatus(status);
+		genericError.setMessage("Problem processing request");
+		genericError.setDetail(errMsg);
+		return genericError;
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_520111_dave_spok/exsubflowcaller/incidentit01</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/incidentit01</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 14:11:37</sys_created_on>
+        <sys_id>4b6a5d6997311110e5a61c800153afc9</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>incidentit01</sys_name>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_ws_operation_4b6a5d6997311110e5a61c800153afc9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 12:49:51</sys_updated_on>
+        <web_service_definition display_value="ExSubflowCaller">29595d6597311110e5a61c800153af3c</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

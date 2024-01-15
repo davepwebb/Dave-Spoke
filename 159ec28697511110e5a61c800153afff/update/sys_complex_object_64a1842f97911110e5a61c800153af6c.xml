@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD60a1842f5e9111103101676f03d1f56c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>159ec28697511110e5a61c800153afff</scope_name>
+        <serialized_content>{"FlowDesigner:FD60a1842f5e9111103101676f03d1f56c":{"incident_short_description":"String","incident_short_description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Incident Short Description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"incident_numer":"String","incident_numer.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Incident Number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD60a1842f5e9111103101676f03d1f56c.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Remote Table\",\"mandatory\":\"false\",\"uiUniqueId\":\"1f4407a9-c3a5-4a05-bf4f-5dcbaa115c08\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD60a1842f5e9111103101676f03d1f56c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"12\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-19 16:18:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64a1842f97911110e5a61c800153af6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD60a1842f5e9111103101676f03d1f56c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_complex_object_64a1842f97911110e5a61c800153af6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-19 16:18:35</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

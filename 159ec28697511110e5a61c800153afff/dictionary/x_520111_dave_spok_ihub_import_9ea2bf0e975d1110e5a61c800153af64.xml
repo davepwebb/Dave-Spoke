@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8b4cbed5976d9110e5a61c800153af95" extends="sys_import_set_row" label="Get Instance Data" max_length="40" name="x_520111_dave_spok_ihub_import_9ea2bf0e975d1110e5a61c800153af64" type="collection">
+        <element attributes="import_attribute_name=data" label="data" max_length="64000" name="u_data" type="json"/>
+    </element>
+</database>

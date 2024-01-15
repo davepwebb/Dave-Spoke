@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Create an Incident Ticket</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Create an Incident Ticket</description>
+        <ih_action>false</ih_action>
+        <internal_name>create_incident</internal_name>
+        <label_cache>[{"name":"{{action.rich_control}}","label":"action➛rich_control","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.result}}","label":"action➛result","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.results}}","label":"action➛results","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.app_inbound_id}}","label":"action➛app_inbound_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.channel_user_id}}","label":"action➛channel_user_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.outbound_token}}","label":"action➛outbound_token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sys_alias","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.request_context}}","label":"action➛request_context","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.activity}}","label":"action➛Activity","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.token}}","label":"action➛outbound_token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.conversation_id}}","label":"action➛Conversation ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.params}}","label":"action➛Params","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ayload}}","label":"action➛ayload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.other_arguments}}","label":"action➛Other Arguments","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.args}}","label":"action➛Args","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out}}","label":"action➛Ms Out","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.Message}}","label":"action➛Ms Out➛Message","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.Conversation_ID}}","label":"action➛Ms Out➛Conversation ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.Token}}","label":"action➛Ms Out➛Token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.message}}","label":"action➛Ms Out➛Message","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.conversation_ID}}","label":"action➛Ms Out➛Conversation ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.token}}","label":"action➛Ms Out➛Token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.params.Inbounnd_ID}}","label":"action➛Params➛Inbounnd ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.params.Inbound_ID}}","label":"action➛Params➛Inbound ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.params.inbound_id}}","label":"action➛Params➛Inbound ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.params.Provider_User_ID}}","label":"action➛Params➛Provider User ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.params.provider_user_id}}","label":"action➛Params➛Provider User ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.provider_user_id}}","label":"action➛provider_user_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.current_msg}}","label":"action➛current_msg","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.rich_ccontrol}}","label":"action➛rich_ccontrol","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.last_rich_control}}","label":"action➛last_rich_control","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.status}}","label":"action➛status","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.user_id}}","label":"action➛user_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.provider_app_id}}","label":"action➛provider_app_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message_id}}","label":"action➛message_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.cs_message_id}}","label":"action➛cs_message_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.cs_message_sys_id}}","label":"action➛CS Message Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.headers}}","label":"action➛headers","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.response_headers}}","label":"action➛response headers","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message}}","label":"action➛message","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.status_code}}","label":"action➛Status Code","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message4}}","label":"action➛Message","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.response_headers3}}","label":"action➛Response Header","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.provider_app_id1}}","label":"action➛Provider App I","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.providerappid}}","label":"action➛providerAppId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.provideruserid}}","label":"action➛providerUserId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.variaoutboundtokenble}}","label":"action➛variaoutboundTokenble","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.outboundtoken}}","label":"action➛outboundToken","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.messageauthid}}","label":"action➛messageAuthId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.check_if_live_agent_card}}","label":"action➛check_if_live_agent_card","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.check_if_typing_indicator}}","label":"action➛check_if_typing_indicator","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.id}}","label":"action➛ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service_url}}","label":"action➛Service URL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.conversation_id}}","label":"action➛MS Out➛conversation_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.service_url}}","label":"action➛MS Out➛service_url","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ms_out.attachments}}","label":"action➛MS Out➛attachments","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.variable1}}","label":"action➛variable1","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.serviceurl}}","label":"action➛ServiceURL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.tenant_id}}","label":"action➛Tenant ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.originserviceurl}}","label":"action➛OriginServiceURL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.messagetype}}","label":"action➛MessageType","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message_type}}","label":"action➛Message Type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.origin_service_url}}","label":"action➛OriginServiceURL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.connection_alias}}","label":"action➛Credentials Alias","type":"action","ref":"sys_alias","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.activity_id}}","label":"action➛activityID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.activityid}}","label":"action➛activityID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.activity_id8}}","label":"action➛Activity ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.team_id}}","label":"action➛Team ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.team_group_id}}","label":"action➛Team/Group ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.datarange}}","label":"action➛dataRange","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.resource_path_prefix}}","label":"action➛Resource Path Prefix","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.auth_token}}","label":"action➛Auth Token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ah_task}}","label":"action➛task","type":"action","ref":"task","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ah_task.description}}","label":"action➛Task➛Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ah_task.short_description}}","label":"action➛Task➛Short description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ah_task.priority}}","label":"action➛Task➛Priority","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ah_task.assigned_to}}","label":"action➛Task➛Assigned to","type":"action","ref":"sys_user","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ah_task.assignment_group}}","label":"action➛Task➛Assignment group","type":"action","ref":"sys_user_group","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.Description}}","label":"action➛Description","type":"action","ref":"","reference_display":"","base_type":"string_full_utf8","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.short_description}}","label":"action➛Short Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.description}}","label":"action➛Description","type":"action","ref":"","reference_display":"","base_type":"string_full_utf8","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.configuration_item}}","label":"action➛Configuration Item","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.cmdb_ci}}","label":"action➛Configuration Item","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.business_service}}","label":"action➛Business Service","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service_offering}}","label":"action➛Service Offering","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.assignment_group}}","label":"action➛Assignment Group","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.impact}}","label":"action➛Impact","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.urgency}}","label":"action➛Urgency","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e3909c05-22f2-4d15-8652-0bed94736911].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e3909c05-22f2-4d15-8652-0bed94736911].result}}","label":"step➛Script step➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload}}","label":"step➛Prepare Inputs➛payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results}}","label":"step➛Prepare Inputs➛results","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_0}}","label":"step➛Prepare Inputs➛results➛results_0","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.results_0_child1}}","label":"step➛Prepare Inputs➛results➛result_chil➛results_0_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.result}}","label":"step➛Prepare Inputs➛results➛result_chil➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.results_0_child2}}","label":"step➛Prepare Inputs➛results➛result_chil➛results_0_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.mediaUrl}}","label":"step➛Prepare Inputs➛results➛result_chil➛media_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.results_0_child3}}","label":"step➛Prepare Inputs➛results➛result_chil➛results_0_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.messageId}}","label":"step➛Prepare Inputs➛results➛result_chil➛message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload.payload_child1}}","label":"step➛Prepare Inputs➛payload➛payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload.values}}","label":"step➛Prepare Inputs➛payload➛values","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload.payload_child2}}","label":"step➛Prepare Inputs➛payload➛payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload.replyToId}}","label":"step➛Prepare Inputs➛payload➛reply_to_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.result_child1}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛result_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.message}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.result_child2}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛result_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.conversation_id}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛conversation_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.result_child3}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛result_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.service_url}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.result_child4}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛result_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.type}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].isfirstmsg}}","label":"step➛Prepare Inputs➛isFirstMsg","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].provider_app_id}}","label":"step➛Prepare Inputs➛provider_app_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.results_0_child4}}","label":"step➛Prepare Inputs➛results➛result_chil➛results_0_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.shouldRunPreProcessor}}","label":"step➛Prepare Inputs➛results➛result_chil➛shouldRunPreProcessor","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.isFirstMsg}}","label":"step➛Prepare Inputs➛results➛result_chil➛isFirstMsg","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.shouldRunProcessor}}","label":"step➛Prepare Inputs➛results➛result_chil➛run_pre_processor","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.media_url}}","label":"step➛Prepare Inputs➛results➛result_chil➛media_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.message_id}}","label":"step➛Prepare Inputs➛results➛result_chil➛message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.run_pre_processor}}","label":"step➛Prepare Inputs➛results➛result_chil➛run_pre_processor","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload.reply_to_id}}","label":"step➛Prepare Inputs➛payload➛reply_to_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].status}}","label":"step➛Prepare Inputs➛inputs_prepared","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result}}","label":"step➛Prepare Inputs➛results➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.attachments}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛attachments","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.ms_out_child6}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛ms_out_child6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.attachmentLayout}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛attachment_layout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.ms_out_child7}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛ms_out_child7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.summary}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛summary","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.ms_out_child8}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛ms_out_child8","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.text}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.ms_out_child9}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛ms_out_child9","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.origin_service_url}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛origin_service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.ms_out_child10}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛ms_out_child10","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.tenant_id}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛tenant_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.ms_out_child11}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛ms_out_child11","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0.ms_out.message_id}}","label":"step➛Prepare Inputs➛results➛result_chil➛ms_out➛message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18}}","label":"step➛Prepare Inputs➛payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.payload_child1}}","label":"step➛Prepare Inputs➛payload➛payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.reply_to_id}}","label":"step➛Prepare Inputs➛payload➛reply_to_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.payload_child2}}","label":"step➛Prepare Inputs➛payload➛payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.value}}","label":"step➛Prepare Inputs➛payload➛value","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values}}","label":"step➛Prepare Inputs➛payload➛values","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values.values_child1}}","label":"step➛Prepare Inputs➛payload➛values➛values_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values.date}}","label":"step➛Prepare Inputs➛payload➛values➛date","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values.values_child2}}","label":"step➛Prepare Inputs➛payload➛values➛values_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values.time}}","label":"step➛Prepare Inputs➛payload➛values➛time","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values.values_child3}}","label":"step➛Prepare Inputs➛payload➛values➛values_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload18.values.select_topic}}","label":"step➛Prepare Inputs➛payload➛values➛select_topic","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload_values}}","label":"step➛Prepare Inputs➛payload_values","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].payload_reply_to_id}}","label":"step➛Prepare Inputs➛payload_reply_to_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].inputs_prepared}}","label":"step➛Prepare Inputs➛inputs_prepared","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_chil}}","label":"step➛Prepare Inputs➛results➛result_chil","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result_child0}}","label":"step➛Prepare Inputs➛results➛result_chil","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result.results_child0_child1}}","label":"step➛Prepare Inputs➛results➛result➛results_child0_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result.result}}","label":"step➛Prepare Inputs➛results➛result➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result.results_child0_child2}}","label":"step➛Prepare Inputs➛results➛result➛results_child0_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.result.message_id}}","label":"step➛Prepare Inputs➛results➛result➛message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results1}}","label":"step➛Prepare Inputs➛results","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results17}}","label":"step➛Prepare Inputs➛results1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.ms_out}}","label":"step➛Prepare Inputs➛results➛service_url➛ms_out","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.result}}","label":"step➛Prepare Inputs➛results➛service_url➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.ms_out_str}}","label":"step➛Prepare Inputs➛results➛service_url➛ms_out_str","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.message_id}}","label":"step➛Prepare Inputs➛results➛service_url➛cs_message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.cs_message_id}}","label":"step➛Prepare Inputs➛results➛service_url➛cs_message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.result1}}","label":"step➛Prepare Inputs➛results➛service_url➛result1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.run_pre_processor}}","label":"step➛Prepare Inputs➛results➛service_url➛run_pre_processor","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.is_valid}}","label":"step➛Prepare Inputs➛results➛service_url➛is_valid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url.should_run_preprocessor}}","label":"step➛Prepare Inputs➛results➛service_url➛should_run_preprocessor","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.service_url}}","label":"step➛Prepare Inputs➛results➛service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.is_valid}}","label":"step➛Prepare Inputs➛results➛results_child0➛is_valid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.service_url}}","label":"step➛Prepare Inputs➛results➛results_child0➛service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.origin_service_url}}","label":"step➛Prepare Inputs➛results➛results_child0➛origin_service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.tenant_id}}","label":"step➛Prepare Inputs➛results➛results_child0➛tenant_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.conversation_id}}","label":"step➛Prepare Inputs➛results➛results_child0➛conversation_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.type}}","label":"step➛Prepare Inputs➛results➛results_child0➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.attachments}}","label":"step➛Prepare Inputs➛results➛results_child0➛attachments","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.text}}","label":"step➛Prepare Inputs➛results➛results_child0➛text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.attachment_layout}}","label":"step➛Prepare Inputs➛results➛results_child0➛attachment_layout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.text_format}}","label":"step➛Prepare Inputs➛results➛results_child0➛text_format","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.summary}}","label":"step➛Prepare Inputs➛results➛results_child0➛summary","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.ms_out_str}}","label":"step➛Prepare Inputs➛results➛results_child0➛ms_out_str","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.results_child0_child13}}","label":"step➛Prepare Inputs➛results➛results_child0➛results_child0_child13","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.run}}","label":"step➛Prepare Inputs➛results➛results_child0➛run","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.run_pre_processor}}","label":"step➛Prepare Inputs➛results➛results_child0➛run_pre_processor","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].results.results_child0.cs_message_id}}","label":"step➛Prepare Inputs➛results➛results_child0➛cs_message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array}}","label":"step➛Prepare Inputs➛result_array","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array.result}}","label":"step➛Prepare Inputs➛result_array➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array.result.result_child1}}","label":"step➛Prepare Inputs➛result_array➛result➛result_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array.result.result_str}}","label":"step➛Prepare Inputs➛result_array➛result➛result_str1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array.result.result_child2}}","label":"step➛Prepare Inputs➛result_array➛result➛result_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array.result.cs_message_id}}","label":"step➛Prepare Inputs➛result_array➛result➛cs_message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[70a84244-0ce7-43b1-8ab1-e6cc2fa1e2c4].result_array.result.ms_out_str}}","label":"step➛Prepare Inputs➛result_array➛result➛ms_out_str","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ebc557a-d71e-4492-ac0f-d51614b64c5f].variable}}","label":"step➛Default Date Inbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ebc557a-d71e-4492-ac0f-d51614b64c5f].result}}","label":"step➛Default Date Inbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[db6de61a-6dcb-41fc-9edf-6e7dc9a1ce88].variable}}","label":"step➛Default Date Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[db6de61a-6dcb-41fc-9edf-6e7dc9a1ce88].result}}","label":"step➛Default Date Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[619cbb03-9082-4f0f-ad3a-0026a45dbdd3].variable}}","label":"step➛Default Multipart Inbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[619cbb03-9082-4f0f-ad3a-0026a45dbdd3].result}}","label":"step➛Default Multipart Inbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[59ba3e24-ac9b-47f3-bf25-e40543ddb476].variable}}","label":"step➛Default Multipart Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[59ba3e24-ac9b-47f3-bf25-e40543ddb476].result}}","label":"step➛Default Multipart Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a8b4b367-82d4-48a5-b845-d9de9d99e2e1].variable}}","label":"step➛Default Text Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a8b4b367-82d4-48a5-b845-d9de9d99e2e1].result}}","label":"step➛Default Text Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dd3520a9-f067-4f0f-aa81-9199bc3d85df].variable}}","label":"step➛Action Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dd3520a9-f067-4f0f-aa81-9199bc3d85df].result}}","label":"step➛Action Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b09795bc-0d16-4748-a47f-adb86c963ded].variable}}","label":"step➛Get Conversation ID➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b09795bc-0d16-4748-a47f-adb86c963ded].conversation_id}}","label":"step➛Get Conversation ID➛Conversation ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7384fddc-c185-4fc5-9d38-813116be4c4e].status}}","label":"step➛Look Up Record step➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7384fddc-c185-4fc5-9d38-813116be4c4e].record.message}}","label":"step➛Look Up Record step➛Adapter Message Record➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7384fddc-c185-4fc5-9d38-813116be4c4e].record.message_id}}","label":"step➛Look Up Record step➛Adapter Message Record➛Message ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fa8b40f6-0bc2-4efe-8655-9c7e2d5b29b0].variable}}","label":"step➛Update Previous Message➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fa8b40f6-0bc2-4efe-8655-9c7e2d5b29b0].message_id}}","label":"step➛Update Previous Message➛message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7384fddc-c185-4fc5-9d38-813116be4c4e].record}}","label":"step➛Look Up Record step➛Adapter Message Record","type":"step","ref":"sys_cs_adapter_message","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7384fddc-c185-4fc5-9d38-813116be4c4e].record.sys_id}}","label":"step➛Look Up Record step➛Adapter Message Record➛Sys ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].gr}}","label":"step➛Get the updated previous message➛gr","type":"step","ref":"sys_cs_adapter_message","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].message}}","label":"step➛Get the updated previous message➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].message_id}}","label":"step➛Get the updated previous message➛message_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].glide_var}}","label":"step➛Get the updated previous message➛glide_var","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].isr}}","label":"step➛Get the updated previous message➛Isr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].is_record_found}}","label":"step➛Get the updated previous message➛Is Record Found","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].sent_msg_as_update}}","label":"step➛Get the updated previous message➛sent_msg_as_update","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].msg_sent_as_update}}","label":"step➛Get the updated previous message➛should_send_message_as_","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].should_send_msg_as_update}}","label":"step➛Get the updated previous message➛should_send_msg_as_update","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[702ae1ce-c8fd-4bc2-afe3-7bab82c2c9f1].updated_ms_out_str}}","label":"step➛Get the updated previous message➛updated_ms_out_str","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5f7840d1-fada-4825-ba4a-fa049471720d].variable}}","label":"step➛Script stepΩ➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5f7840d1-fada-4825-ba4a-fa049471720d].result}}","label":"step➛Script stepΩ➛Result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dc5272d5-a26e-4c3f-9790-5df02c3d43f4].variable}}","label":"step➛Default Card Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dc5272d5-a26e-4c3f-9790-5df02c3d43f4].result}}","label":"step➛Default Card Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1e602639-d217-41b1-89f3-c29e0fe6a355].variable}}","label":"step➛Default Picker Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1e602639-d217-41b1-89f3-c29e0fe6a355].result}}","label":"step➛Default Picker Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f708a8f4-18ac-4299-bb44-0dcb3bf54034].variable}}","label":"step➛Default Link Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f708a8f4-18ac-4299-bb44-0dcb3bf54034].rich_control}}","label":"step➛Default Link Outbound Transformer➛rich_control","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f708a8f4-18ac-4299-bb44-0dcb3bf54034].result}}","label":"step➛Default Link Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[054631c6-686a-49ad-af17-6e3c2bf990c3].variable}}","label":"step➛Default MultiLink Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[054631c6-686a-49ad-af17-6e3c2bf990c3].result}}","label":"step➛Default MultiLink Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[aec32fa4-6517-4845-9c88-b27dda90ad4c].variable}}","label":"step➛Default HTML Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[aec32fa4-6517-4845-9c88-b27dda90ad4c].result}}","label":"step➛Default HTML Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cc7dda63-2622-419c-b4b1-ca47985a94a1].variable}}","label":"step➛Default Output Image Outbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cc7dda63-2622-419c-b4b1-ca47985a94a1].result}}","label":"step➛Default Output Image Outbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fab6ff8a-3e30-4c83-96f1-c1923a7ca0b1].variable}}","label":"step➛Default Text Inbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fab6ff8a-3e30-4c83-96f1-c1923a7ca0b1].resultt}}","label":"step➛Default Text Inbound Transformer➛resultt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fab6ff8a-3e30-4c83-96f1-c1923a7ca0b1].result}}","label":"step➛Default Text Inbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2600607c-610e-4f1d-aa1b-758872010b56].variable}}","label":"step➛Link Account Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2600607c-610e-4f1d-aa1b-758872010b56].result}}","label":"step➛Link Account Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[101337b0-b77d-4cf2-95ae-033fa9cd7bb6].status}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[101337b0-b77d-4cf2-95ae-033fa9cd7bb6].result}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].convid}}","label":"step➛Script step➛conv_Id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].serviceurl}}","label":"step➛Script step➛user_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].userid}}","label":"step➛Script step➛userId","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].conv_id}}","label":"step➛Script step➛conv_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].service_url}}","label":"step➛Script step➛service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].user_id}}","label":"step➛Script step➛user_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[49b31b9e-ded4-4495-9559-97fc870d0235].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[49b31b9e-ded4-4495-9559-97fc870d0235].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[49b31b9e-ded4-4495-9559-97fc870d0235].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c02276d5-b66b-4a3d-b971-224a642c17f2].userid}}","label":"step➛Script step➛userid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c02276d5-b66b-4a3d-b971-224a642c17f2].email_id}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[846a88fb-6497-413d-b9fe-4665110cfe1d].record}}","label":"step➛Look Up Record step➛User Record","type":"step","ref":"sys_user","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[846a88fb-6497-413d-b9fe-4665110cfe1d].record.sys_id}}","label":"step➛Look Up Record step➛User Record➛Sys ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[bc29a112-8ad9-4e08-ae11-2a35396b4f2b].record.sys_id}}","label":"step➛Create Record step➛Linked Accounts Record➛Sys ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[019b4746-8654-4882-b649-e0600a05cd88].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[019b4746-8654-4882-b649-e0600a05cd88].status}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c02276d5-b66b-4a3d-b971-224a642c17f2].status}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c02276d5-b66b-4a3d-b971-224a642c17f2].user_id}}","label":"step➛Script step➛userid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].variable4}}","label":"step➛Script step➛variable4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].tenant_id}}","label":"step➛Script step➛tenant_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5e8c99ab-2831-4a00-b74f-6d499ee0da3c].origin_service_url}}","label":"step➛Script step➛origin_service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].ms_out}}","label":"step➛Convert to MS Out➛ms_out","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].ms_out.ms_out_child1}}","label":"step➛Convert to MS Out➛ms_out➛ms_out_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].ms_out.service_url}}","label":"step➛Convert to MS Out➛ms_out➛service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].ms_out.ms_out_child2}}","label":"step➛Convert to MS Out➛ms_out➛ms_out_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].ms_out.origin_service_url}}","label":"step➛Convert to MS Out➛ms_out➛origin_service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].service_url}}","label":"step➛Convert to MS Out➛service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].origin_service_url}}","label":"step➛Convert to MS Out➛origin_service_url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].tenant_id}}","label":"step➛Convert to MS Out➛tenant_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].conversation_id}}","label":"step➛Convert to MS Out➛conversation_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].type}}","label":"step➛Convert to MS Out➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].text}}","label":"step➛Convert to MS Out➛text","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments}}","label":"step➛Convert to MS Out➛attachments","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachment_layout}}","label":"step➛Convert to MS Out➛attachment_layout","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].summary}}","label":"step➛Convert to MS Out➛summary","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].text_format}}","label":"step➛Convert to MS Out➛text_format","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].status}}","label":"step➛Convert to MS Out➛is_valid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4e5f9db3-efc1-4cee-853c-f673b533ec53].variable}}","label":"step➛Is Typing Indicator➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4e5f9db3-efc1-4cee-853c-f673b533ec53].is_typing_indicator}}","label":"step➛Is Typing Indicator➛is_typing_indicator","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d82efd61-2512-41b3-964b-2b4ff5477173].variable}}","label":"step➛Is Live Agent Card➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d82efd61-2512-41b3-964b-2b4ff5477173].is_live_agent_card}}","label":"step➛Is Live Agent Card➛is_live_agent_card","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].variable}}","label":"step➛Convert to MS Out➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7}}","label":"step➛Convert to MS Out➛attachments","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.contentType}}","label":"step➛Convert to MS Out➛attachments➛contentType","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.attachment.contenttype_child1}}","label":"step➛Convert to MS Out➛attachments➛attachment➛contentType_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.attachment}}","label":"step➛Convert to MS Out➛attachments➛attachment","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.attachment.attachment_child1}}","label":"step➛Convert to MS Out➛attachments➛attachment➛attachment_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.attachment.contentType}}","label":"step➛Convert to MS Out➛attachments➛attachment➛contentType","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.attachment.attachment_child2}}","label":"step➛Convert to MS Out➛attachments➛attachment➛attachment_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].attachments7.attachment.content}}","label":"step➛Convert to MS Out➛attachments➛attachment➛content","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].is_valid}}","label":"step➛Convert to MS Out➛is_valid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].ms_out_str}}","label":"step➛Convert to MS Out➛ms_out_str","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].connection_alias}}","label":"step➛Convert to MS Out➛connection_alias","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a39a1837-6208-4c82-bce1-d5028cb33dfa].activity}}","label":"step➛Convert to MS Out➛activity","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4ced60e5-d15e-4e97-bc32-f7dde6cdb03e].variable}}","label":"step➛Store Action Message in User Context➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4ced60e5-d15e-4e97-bc32-f7dde6cdb03e].status}}","label":"step➛Store Action Message in User Context➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f28b97ab-184d-48ac-8308-2cada64d0c3d].variable}}","label":"step➛Has Action Buttons?➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f28b97ab-184d-48ac-8308-2cada64d0c3d].has_action_buttons}}","label":"step➛Has Action Buttons?➛has_action_buttons","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].variable}}","label":"step➛Set Provider Attributes➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].variable1}}","label":"step➛Set Provider Attributes➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].variable2}}","label":"step➛Set Provider Attributes➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].token}}","label":"step➛Set Provider Attributes➛token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].provider_user_id}}","label":"step➛Set Provider Attributes➛provider_user_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].request_context}}","label":"step➛Set Provider Attributes➛request_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2899da31-3dae-4bb5-a439-d7e8544a8905].provider_user_name}}","label":"step➛Set Provider Attributes➛provider_user_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cb69d5ce-7947-4c6b-9458-b0640f0f97c1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cb69d5ce-7947-4c6b-9458-b0640f0f97c1].result}}","label":"step➛Script step➛Result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a777b24b-41ce-4e75-8a3a-3466867a348b].variable}}","label":"step➛Contextual Action Processor➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a777b24b-41ce-4e75-8a3a-3466867a348b].result}}","label":"step➛Contextual Action Processor➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[496c18b4-4590-400f-9f31-cbc45f9653c8].variable}}","label":"step➛Default Picker Inbound Transformer➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[496c18b4-4590-400f-9f31-cbc45f9653c8].result}}","label":"step➛Default Picker Inbound Transformer➛result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3a60c49-a05b-4ae8-9c05-6d79acc57ea0].variable}}","label":"step➛Get Payload➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3a60c49-a05b-4ae8-9c05-6d79acc57ea0].payload}}","label":"step➛Get Payload➛payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5d4b453e-6c6e-4a30-850f-a1cec5ec5831].status_code}}","label":"step➛Send Message➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5d4b453e-6c6e-4a30-850f-a1cec5ec5831].response_body}}","label":"step➛Send Message➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5d4b453e-6c6e-4a30-850f-a1cec5ec5831].error_message}}","label":"step➛Send Message➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2a5a3314-74be-4a27-9ea0-3ca9d9f8210e].variable}}","label":"step➛Handle Response➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2a5a3314-74be-4a27-9ea0-3ca9d9f8210e].messageid}}","label":"step➛Handle Response➛messageID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2a5a3314-74be-4a27-9ea0-3ca9d9f8210e].message_id}}","label":"step➛Handle Response➛message ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3a60c49-a05b-4ae8-9c05-6d79acc57ea0].connection_alias}}","label":"step➛Get Payload➛connection_alias","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ed9b8755-1cf6-4f91-a607-903cddd99525].response_body}}","label":"step➛Look up Channels by Team or Group ID➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ed9b8755-1cf6-4f91-a607-903cddd99525].status_code}}","label":"step➛Look up Channels by Team or Group ID➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e31feb2e-50d1-4425-9c9e-091b30da3860].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e31feb2e-50d1-4425-9c9e-091b30da3860].teamid}}","label":"step➛Pre Processing➛TeamID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels}}","label":"step➛Post Processing➛Channels","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel}}","label":"step➛Post Processing➛Channels➛Channel","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8.channel.channel_child1}}","label":"step➛Post Processing➛Channels➛Channel➛Channels➛Channel➛Channel_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8.channel.Name}}","label":"step➛Post Processing➛Channels➛Channel➛Channels➛Channel➛Name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8.channel.displayName}}","label":"step➛Post Processing➛Channels➛Channel➛Channels➛Channel➛Name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8.channel.channel_child2}}","label":"step➛Post Processing➛Channels➛Channel➛Channels➛Channel➛Channel_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8.channel.ID}}","label":"step➛Post Processing➛Channels➛Channel➛Channels➛Channel➛ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8.channel.id}}","label":"step➛Post Processing➛Channels➛Channel➛Channels➛Channel➛ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.FD45cf3dd3914658109d320b2c25d95ab8}}","label":"step➛Post Processing➛Channels➛Channel➛Channels","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.channel_child1}}","label":"step➛Post Processing➛Channels➛Channel➛Channel_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.Name}}","label":"step➛Post Processing➛Channels➛Channel➛Name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.displayName}}","label":"step➛Post Processing➛Channels➛Channel➛Name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.channel_child2}}","label":"step➛Post Processing➛Channels➛Channel➛Channel_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.ID}}","label":"step➛Post Processing➛Channels➛Channel➛ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].channels.channel.id}}","label":"step➛Post Processing➛Channels➛Channel➛ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].status}}","label":"step➛Post Processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce75ccf-fddb-409e-9c65-d2992f69802a].errormessage}}","label":"step➛Post Processing➛ErrorMessage","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ed9b8755-1cf6-4f91-a607-903cddd99525].api_version}}","label":"step➛Look up Channels by Team or Group ID➛API Version","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cea15c7d-92ab-435f-8892-755738dfb676].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cea15c7d-92ab-435f-8892-755738dfb676].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[975a7d2f-0b6d-43dc-8ff0-cfb46370db4b].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[975a7d2f-0b6d-43dc-8ff0-cfb46370db4b].header_key}}","label":"step➛Script step➛header_key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[975a7d2f-0b6d-43dc-8ff0-cfb46370db4b].header_value}}","label":"step➛Script step➛header_value","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1b5adcb8-27f2-42da-bd48-9709001d59e2].record}}","label":"step➛Create Record step➛Incident Record","type":"step","ref":"incident","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[26cf00ed-fd33-4381-9a3b-ed9d81026892].record}}","label":"step➛Create Record step➛Incident Record","type":"step","ref":"incident","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Create Incident</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 18:56:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>76bbabda97461110e5a61c800153af42</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_76bbabda97461110e5a61c800153af42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=76bbabda97461110e5a61c800153af42"/>
+    <sys_variable_value action="delete_multiple" query="document_key=76bbabda97461110e5a61c800153af42"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>76bbabda97461110e5a61c800153af42</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>0940bf1297c61110e5a61c800153af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD3840bf12c4c611108df008dad50b1a11":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD3840bf12c4c611108df008dad50b1a11.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":null,\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b8dd6347-68f0-42c7-a4f9-67612da5c553\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD3840bf12c4c611108df008dad50b1a11\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"-1\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">8940bf1297c61110e5a61c800153af14</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>76bbabda97461110e5a61c800153af42</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>4540bf1297c61110e5a61c800153af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">0140bf1297c61110e5a61c800153af1a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=76bbabda97461110e5a61c800153af42"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>76bbabda97461110e5a61c800153af42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>4d40bf1297c61110e5a61c800153af42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</table>
+        <value>{{step[26cf00ed-fd33-4381-9a3b-ed9d81026892].record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>76bbabda97461110e5a61c800153af42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>c140bf1297c61110e5a61c800153af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>76bbabda97461110e5a61c800153af42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>0140bf1297c61110e5a61c800153af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=76bbabda97461110e5a61c800153af42^sys_idNOT IN98bfabde97861110e5a61c800153af31"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Incident">76bbabda97461110e5a61c800153af42</action>
+        <cid>26cf00ed-fd33-4381-9a3b-ed9d81026892</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create Record step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create Record">9cbaa0f267003200553fafb49585ef69</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>98bfabde97861110e5a61c800153af31</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=98bfabde97861110e5a61c800153af31"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>98bfabde97861110e5a61c800153af31</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>50bfabde97861110e5a61c800153af39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">f0fb68f267003200553fafb49585efa0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=98bfabde97861110e5a61c800153af31"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_field_values</field>
+        <id>98bfabde97861110e5a61c800153af31</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>94bfabde97861110e5a61c800153af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value>description={{action.description}}^short_description={{action.short_description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_table_name</field>
+        <id>98bfabde97861110e5a61c800153af31</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>dcbfabde97861110e5a61c800153af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=98bfabde97861110e5a61c800153af31"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=98bfabde97861110e5a61c800153af31"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=98bfabde97861110e5a61c800153af31"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_98bfabde97861110e5a61c800153af31"/>
+    <sys_hub_action_input action="delete_multiple" query="model=76bbabda97461110e5a61c800153af42^sys_idNOT IN00bf6bde97861110e5a61c800153afce,0cbf6bde97861110e5a61c800153afdc,14bfabde97861110e5a61c800153af0e,14bfabde97861110e5a61c800153af12,4cbf6bde97861110e5a61c800153afe0,88bf6bde97861110e5a61c800153afd4,8cbf6bde97861110e5a61c800153afe4,c8bf6bde97861110e5a61c800153afd8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=15f73529-e531-44d9-ac24-1d5126262b1b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>short_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Short Description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:20</sys_created_on>
+        <sys_id>00bf6bde97861110e5a61c800153afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=00bf6bde97861110e5a61c800153afce"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ee82438e-5a06-46c7-9f11-4acd818a822c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>business_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Business Service</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>0cbf6bde97861110e5a61c800153afdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0cbf6bde97861110e5a61c800153afdc"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9891c89e-523d-40ba-9284-a7eac2aeca4c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>impact</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Impact</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>14bfabde97861110e5a61c800153af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=14bfabde97861110e5a61c800153af0e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=00c9064c-4df8-40f9-8fe4-c9131c45c40d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>urgency</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Urgency</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>14bfabde97861110e5a61c800153af12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=14bfabde97861110e5a61c800153af12"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d40e73ce-3de9-4189-9acd-fe5e19895f08</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_offering</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Service Offering</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>4cbf6bde97861110e5a61c800153afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4cbf6bde97861110e5a61c800153afe0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8),uiUniqueId=cd34cb54-fe0f-4d40-b7d1-799c91cbc691</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Description</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>88bf6bde97861110e5a61c800153afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88bf6bde97861110e5a61c800153afd4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=149c2722-3d79-47c5-8ae3-2b2ef0acafd4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Assignment Group</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>8cbf6bde97861110e5a61c800153afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8cbf6bde97861110e5a61c800153afe4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0cba6384-29a4-47d5-aec8-b245ce8dc6f0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cmdb_ci</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Configuration Item</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>c8bf6bde97861110e5a61c800153afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c8bf6bde97861110e5a61c800153afd8"/>
+    <sys_hub_action_output action="delete_multiple" query="model=76bbabda97461110e5a61c800153af42^sys_idNOT IN0140bf1297c61110e5a61c800153af1a,8940bf1297c61110e5a61c800153af14,c940bf1297c61110e5a61c800153af20"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d3afebe9-61aa-46e1-8794-ec09ded38403,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>0140bf1297c61110e5a61c800153af1a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0140bf1297c61110e5a61c800153af1a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0140bf1297c61110e5a61c800153af1a"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD3840bf12c4c611108df008dad50b1a11,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b8dd6347-68f0-42c7-a4f9-67612da5c553</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>8940bf1297c61110e5a61c800153af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8940bf1297c61110e5a61c800153af14"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8940bf1297c61110e5a61c800153af14"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=7b55c1a7-6763-4462-8d4e-b047bceb526a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype display_value="Record" element="record" name="var__m_sys_flow_step_definition_output_9cbaa0f267003200553fafb49585ef69">966cd57267003200553fafb49585efa0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Incident">76bbabda97461110e5a61c800153af42</model>
+        <model_id>76bbabda97461110e5a61c800153af42</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>c940bf1297c61110e5a61c800153af20</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c940bf1297c61110e5a61c800153af20"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c940bf1297c61110e5a61c800153af20"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=76bbabda97461110e5a61c800153af42"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=76bbabda97461110e5a61c800153af42^sys_idNOT IN5cbfabde97861110e5a61c800153af3c"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Create Incident">76bbabda97461110e5a61c800153af42</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:22</sys_created_on>
+        <sys_id>5cbfabde97861110e5a61c800153af3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:22</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=5cbfabde97861110e5a61c800153af3c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42^sys_idNOT IN00bf6bde97861110e5a61c800153afd8,40bf6bde97861110e5a61c800153afdc,58bfabde97861110e5a61c800153af0d,58bfabde97861110e5a61c800153af11,80bf6bde97861110e5a61c800153afe0,88bf6bde97861110e5a61c800153afd3,98bfabde97861110e5a61c800153af15,c0bf6bde97861110e5a61c800153afe4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>00bf6bde97861110e5a61c800153afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cmdb_ci</element>
+        <help/>
+        <hint/>
+        <label>Configuration Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>40bf6bde97861110e5a61c800153afdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignment_group</element>
+        <help/>
+        <hint/>
+        <label>Assignment Group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>58bfabde97861110e5a61c800153af0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>impact</element>
+        <help/>
+        <hint/>
+        <label>Impact</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>58bfabde97861110e5a61c800153af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>business_service</element>
+        <help/>
+        <hint/>
+        <label>Business Service</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>80bf6bde97861110e5a61c800153afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>short_description</element>
+        <help/>
+        <hint/>
+        <label>Short Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>88bf6bde97861110e5a61c800153afd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>urgency</element>
+        <help/>
+        <hint/>
+        <label>Urgency</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>98bfabde97861110e5a61c800153af15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>service_offering</element>
+        <help/>
+        <hint/>
+        <label>Service Offering</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:13:21</sys_created_on>
+        <sys_id>c0bf6bde97861110e5a61c800153afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:13:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_76bbabda97461110e5a61c800153af42"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42^sys_idNOT IN0140bf1297c61110e5a61c800153af20,4540bf1297c61110e5a61c800153af19,8140bf1297c61110e5a61c800153af24"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>0140bf1297c61110e5a61c800153af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>4540bf1297c61110e5a61c800153af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>variable</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 19:15:52</sys_created_on>
+        <sys_id>8140bf1297c61110e5a61c800153af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 19:15:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_76bbabda97461110e5a61c800153af42"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=76bbabda97461110e5a61c800153af42"/>
+</record_update>
