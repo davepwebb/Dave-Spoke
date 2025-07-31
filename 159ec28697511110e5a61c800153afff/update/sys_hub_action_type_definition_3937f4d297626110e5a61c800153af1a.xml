@@ -6,18 +6,22 @@
         <action_template/>
         <active>true</active>
         <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>-1</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>dw_test_a</internal_name>
-        <label_cache>[]</label_cache>
+        <label_cache>[{"name":"{{action.source_data}}","label":"action➛source_data","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8393142d-1362-4ce5-a0ed-70126eb2ad55].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
-        <name>DW Test A </name>
+        <master_snapshot_digest/>
+        <name>DW Test JSON Parser</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -28,15 +32,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3937f4d297626110e5a61c800153af1a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>DW Test A </sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>DW Test JSON Parser</sys_name>
         <sys_overrides/>
         <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3937f4d297626110e5a61c800153af1a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-09 15:26:48</sys_updated_on>
+        <sys_updated_on>2024-12-09 21:38:21</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -64,16 +68,261 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-09 15:26:48</sys_created_on>
         <sys_id>deef864897322110e5a61c800153af23</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-09 15:26:48</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">82ef864897322110e5a61c800153af16</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_3937f4d297626110e5a61c800153af1a^id=3937f4d297626110e5a61c800153af1a"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=3937f4d297626110e5a61c800153af1a^sys_idNOT IN46ef464897322110e5a61c800153afd9"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=3937f4d297626110e5a61c800153af1a^sys_idNOT IN3386cab6835a121071719370ceaad311,46ef464897322110e5a61c800153afd9,49a6ceb6835a121071719370ceaad3d3,9b3f117683d2121071719370ceaad3d2"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="DW Test A ">3937f4d297626110e5a61c800153af1a</action>
+        <action display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</action>
+        <cid>f7eeb632-3307-4316-bc50-323e6f656ad9</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step - EDS Get Jurisdictions</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>3386cab6835a121071719370ceaad311</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:37:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3386cab6835a121071719370ceaad311"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3386cab6835a121071719370ceaad311</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>b786cab6835a121071719370ceaad31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"root_array","children":[{"name":"root_array_object","children":[{"name":"nar","children":[],"type":"string","jpath":"$.root_array[*].nar","previewValue":"99999-1"},{"name":"dataPlatformFlag","children":[],"type":"string","jpath":"$.root_array[*].dataPlatformFlag","previewValue":"Y/N"},{"name":"firstGoLiveDate","children":[],"type":"string","jpath":"$.root_array[*].firstGoLiveDate","previewValue":"2024-05-31"},{"name":"devLandingZoneProvisionDate","children":[],"type":"string","jpath":"$.root_array[*].devLandingZoneProvisionDate","previewValue":"2024-03-31"},{"name":"residencyRequests","children":[{"name":"residencyRequests_object","children":[{"name":"requestName","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].requestName","previewValue":"99999-9.10"},{"name":"requestCreatedDate","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].requestCreatedDate","previewValue":"2024-01-01"},{"name":"requestSubmittedDate","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].requestSubmittedDate","previewValue":"2024-01-01"},{"name":"baoDecisionDate","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].baoDecisionDate","previewValue":"2024-01-02"},{"name":"baoDecision","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].baoDecision","previewValue":"BAO_APPROVED"},{"name":"expectedGoLiveDate","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].expectedGoLiveDate","previewValue":"2024-05-31"},{"name":"requestUri","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].requestUri","previewValue":"/residency/request/99999-9.10"},{"name":"baoApprover","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].baoApprover","previewValue":"bao.99999-9@db.com"},{"name":"itaoRequested","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].itaoRequested","previewValue":"itao.99999-9@db.com"},{"name":"controllingJurisdictions","children":[{"name":"controllingJurisdictions_string","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].controllingJurisdictions[*]","previewValue":"DE"}],"type":"array.string","jpath":"$.root_array[*].residencyRequests[*].controllingJurisdictions[*]","previewValue":""},{"name":"regulatoryDataCategories","children":[{"name":"regulatoryDataCategories_string","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].regulatoryDataCategories[*]","previewValue":"PERSONAL"}],"type":"array.string","jpath":"$.root_array[*].residencyRequests[*].regulatoryDataCategories[*]","previewValue":""},{"name":"requestedLocations","children":[{"name":"requestedLocations_string","children":[],"type":"string","jpath":"$.root_array[*].residencyRequests[*].requestedLocations[*]","previewValue":"EU"}],"type":"array.string","jpath":"$.root_array[*].residencyRequests[*].requestedLocations[*]","previewValue":""}],"type":"object","jpath":"$.root_array[*].residencyRequests[*]","previewValue":""}],"type":"array.object","jpath":"$.root_array[*].residencyRequests[*]","previewValue":""}],"type":"object","jpath":"$.root_array[*]","previewValue":""}],"type":"array.object","jpath":"$.root_array[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3386cab6835a121071719370ceaad311</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>bf86cab6835a121071719370ceaad31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <value>[&#13;
+    {&#13;
+        "nar": "99999-1",&#13;
+        "dataPlatformFlag": "Y/N",&#13;
+        "firstGoLiveDate": "2024-05-31",&#13;
+        "devLandingZoneProvisionDate": "2024-03-31",&#13;
+        "residencyRequests": [&#13;
+            {&#13;
+                "requestName": "99999-9.10",&#13;
+                "requestCreatedDate": "2024-01-01",&#13;
+                "requestSubmittedDate": "2024-01-01",&#13;
+                "baoDecisionDate": "2024-01-02",&#13;
+                "baoDecision": "BAO_APPROVED",&#13;
+                "expectedGoLiveDate": "2024-05-31",&#13;
+                "requestUri": "/residency/request/99999-9.10",&#13;
+                "baoApprover": "bao.99999-9@db.com",&#13;
+                "itaoRequested": "itao.99999-9@db.com",&#13;
+                "controllingJurisdictions": ["DE", "CN", "IN", "GB"],&#13;
+                "regulatoryDataCategories": ["PERSONAL", "EMPLOYEE", "GERMAN_AFC_AML_RECORDS"],&#13;
+                "requestedLocations": ["EU", "IN"]&#13;
+            }&#13;
+        ]&#13;
+    }&#13;
+]</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_3386cab6835a121071719370ceaad311^id=3386cab6835a121071719370ceaad311"/>
+    <sys_element_mapping action="delete_multiple" query="id=3386cab6835a121071719370ceaad311"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>3386cab6835a121071719370ceaad311</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>3786cab6835a121071719370ceaad31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>3386cab6835a121071719370ceaad311</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>7386cab6835a121071719370ceaad31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8393142d-1362-4ce5-a0ed-70126eb2ad55].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>3386cab6835a121071719370ceaad311</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>bb86cab6835a121071719370ceaad31c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=3386cab6835a121071719370ceaad311"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3386cab6835a121071719370ceaad311"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=3386cab6835a121071719370ceaad311^sys_idNOT INfb86cab6835a121071719370ceaad314"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDbb86cab67a5a12105f3cf175a16f4c13</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>159ec28697511110e5a61c800153afff</scope_name>
+        <serialized_content>{"FlowDesigner:FDbb86cab67a5a12105f3cf175a16f4c13":{"root_array":[{"$4_root_array":{"residencyRequests":[{"$3_residencyRequests":{"requestName":"String","requestName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"670169e2-6f94-473b-8f73-3e48523a773f\"}"},"baoDecisionDate":"String","baoDecisionDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"baoDecisionDate\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"0b73bd07-e848-4583-9ec3-ca10c1473d14\"}"},"requestedLocations":["Any"],"requestedLocations.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"requestedLocations\",\"mandatory\":\"false\",\"child_name\":\"requestedLocations_string\",\"uiUniqueId\":\"846221f5-cabe-42c8-ab4d-3775e56cef7f\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"requestedLocations_string\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"12\",\"max_length\":\"0\",\"child_uiUniqueId\":\"20111558-35cd-45dd-b1dd-8fb315144152\"}"},"baoDecision":"String","baoDecision.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"baoDecision\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"dc381fd4-9d90-48e1-9ed0-3a777f0f9f56\"}"},"controllingJurisdictions":["Any"],"controllingJurisdictions.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"controllingJurisdictions\",\"mandatory\":\"false\",\"child_name\":\"controllingJurisdictions_string\",\"uiUniqueId\":\"b3395322-354e-4620-9308-15bb0df33a64\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"controllingJurisdictions_string\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"10\",\"max_length\":\"0\",\"child_uiUniqueId\":\"8128ba18-0a74-44a2-a650-c92cc69f5ade\"}"},"expectedGoLiveDate":"String","expectedGoLiveDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"expectedGoLiveDate\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"4b921894-02af-40ec-8c02-49cbd1c16101\"}"},"regulatoryDataCategories":["Any"],"regulatoryDataCategories.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"regulatoryDataCategories\",\"mandatory\":\"false\",\"child_name\":\"regulatoryDataCategories_string\",\"uiUniqueId\":\"2f09b2e8-0d8b-4da3-9a4a-4648bc758b51\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"regulatoryDataCategories_string\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"11\",\"max_length\":\"0\",\"child_uiUniqueId\":\"58a496f4-cf19-46a4-98c9-3693aa5f3f65\"}"},"requestCreatedDate":"String","requestCreatedDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestCreatedDate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"bf3c4ec3-caca-4073-824f-182a46c688fe\"}"},"requestSubmittedDate":"String","requestSubmittedDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestSubmittedDate\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"415681ae-5dad-4e83-b19f-396757bb7015\"}"},"baoApprover":"String","baoApprover.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"baoApprover\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"7e723bb4-ebc3-4cba-9a41-12f3dca8cc68\"}"},"requestUri":"String","requestUri.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestUri\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"1b07f575-aa28-46e0-82af-f63d9a3b9d10\"}"},"itaoRequested":"String","itaoRequested.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"itaoRequested\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"45c6d4c8-4a14-4571-826c-883b47f7bde0\"}"}}}],"residencyRequests.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"residencyRequests\",\"mandatory\":\"false\",\"child_name\":\"residencyRequests_object\",\"uiUniqueId\":\"08729560-970c-42c2-97e9-98231328deca\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"residencyRequests_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"0\",\"child_uiUniqueId\":\"30fa7974-24eb-4572-8572-d05b40f835eb\"}"},"dataPlatformFlag":"String","dataPlatformFlag.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dataPlatformFlag\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"408e16c3-e174-4293-b541-c513e7823b7d\"}"},"devLandingZoneProvisionDate":"String","devLandingZoneProvisionDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"devLandingZoneProvisionDate\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"3ace4c71-91f2-4269-834d-991c6f8727bb\"}"},"firstGoLiveDate":"String","firstGoLiveDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"firstGoLiveDate\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"6943f8b1-d629-4b19-8019-54aa0dc9492a\"}"},"nar":"String","nar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nar\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e5ba7046-2509-458f-8d4a-cd0b11c88c85\"}"}}}],"root_array.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"root_array\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"502dd2d2-7c5e-425f-8066-49d77aa9b31c\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"1a7f25f6-677d-4034-bb0f-52e4bb41fa8e\"}"}},"FlowDesigner:FDbb86cab67a5a12105f3cf175a16f4c13.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"ace0eb51-c205-45c0-88a9-2810ee35a57c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDbb86cab67a5a12105f3cf175a16f4c13\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f86cab6835a121071719370ceaad313</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:38:20</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDbb86cab67a5a12105f3cf175a16f4c13,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ace0eb51-c205-45c0-88a9-2810ee35a57c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step - EDS Get Jurisdictions">3386cab6835a121071719370ceaad311</model>
+        <model_id>3386cab6835a121071719370ceaad311</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_3386cab6835a121071719370ceaad311</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>fb86cab6835a121071719370ceaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3386cab6835a121071719370ceaad311"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_3386cab6835a121071719370ceaad311</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>7386cab6835a121071719370ceaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</action>
         <cid>8393142d-1362-4ce5-a0ed-70126eb2ad55</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -88,10 +337,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-09 15:26:47</sys_created_on>
         <sys_id>46ef464897322110e5a61c800153afd9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-09 15:26:47</sys_updated_on>
+        <sys_updated_on>2024-12-09 16:59:33</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=46ef464897322110e5a61c800153afd9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -139,6 +388,20 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>46ef464897322110e5a61c800153afd9</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:33</sys_created_on>
+        <sys_id>844f917683d2121071719370ceaad32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:33</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>46ef464897322110e5a61c800153afd9</document_key>
         <order>13</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -149,6 +412,20 @@
         <sys_updated_on>2023-05-09 15:26:47</sys_updated_on>
         <value>18409d8007482000dada43c0d1021e8f</value>
         <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>46ef464897322110e5a61c800153afd9</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:33</sys_created_on>
+        <sys_id>c04f917683d2121071719370ceaad32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:33</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -165,11 +442,768 @@
         <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=46ef464897322110e5a61c800153afd9"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=46ef464897322110e5a61c800153afd9"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=46ef464897322110e5a61c800153afd9"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=46ef464897322110e5a61c800153afd9"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=46ef464897322110e5a61c800153afd9"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_46ef464897322110e5a61c800153afd9"/>
-    <sys_hub_action_input action="delete_multiple" query="model=3937f4d297626110e5a61c800153af1a"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</action>
+        <cid>12564c0b-3c4f-4df1-b84e-77db914cd9cb</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step - EDS Get Approvals</label>
+        <order>4</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:40</sys_created_on>
+        <sys_id>49a6ceb6835a121071719370ceaad3d3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:37:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=49a6ceb6835a121071719370ceaad3d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>49a6ceb6835a121071719370ceaad3d3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:40</sys_created_on>
+        <sys_id>1da6ceb6835a121071719370ceaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:40</sys_updated_on>
+        <value>{&#13;
+    "nar": "99999-9",&#13;
+    "requestName": "99999-9.10",&#13;
+    "requestUri": "/residency/request/99999-9.10",&#13;
+    "requestCreated": "2024-01-01",&#13;
+    "requestSubmitted": "2024-01-10",&#13;
+    "baoApprovalDate": "2024-02-01",&#13;
+    "itaoRequestor": "99999-9.itao@db.com",&#13;
+    "baoApprover": "99999-9.bao@db.com",&#13;
+    "approvals": [&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "DE",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "DE",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "DE",&#13;
+            "approvalStatus": "REJECTED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "grmo@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "CN",&#13;
+            "approvalStatus": "PENDING",&#13;
+            "decisionDate": "",&#13;
+            "decisionBy": ""&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "CN",&#13;
+            "approvalStatus": "APPROVED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "cn.bankingsecrecy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "CN",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+       {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "IN",&#13;
+            "approvalStatus": "REJECTED",&#13;
+            "decisionDate": "2024-02-03",&#13;
+            "decisionBy": "in.dataprivacy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "IN",&#13;
+            "approvalStatus": "APPROVED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "in.bankingsecrecy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "IN",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+           {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "GB",&#13;
+            "approvalStatus": "AUTO_APPROVED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "GB",&#13;
+            "approvalStatus": "AUTO_APPROVED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "EU",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "GB",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        }, &#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "DE",&#13;
+            "approvalStatus": "PENDING",&#13;
+            "decisionDate": "",&#13;
+            "decisionBy": ""&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "DE",&#13;
+            "approvalStatus": "APPROVED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "de.bankingsecrecy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "DE",&#13;
+            "approvalStatus": "REJECTED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "grmo@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "CN",&#13;
+            "approvalStatus": "REJECTED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "cn.dataprivacy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "CN",&#13;
+            "approvalStatus": "REJECTED",&#13;
+            "decisionDate": "2024-02-02",&#13;
+            "decisionBy": "cn.bankingsecrecy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "CN",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+       {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "IN",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "IN",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "IN",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        },&#13;
+           {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "PERSONAL",&#13;
+            "controllingJurisdiction": "GB",&#13;
+            "approvalStatus": "PENDING",&#13;
+            "decisionDate": "",&#13;
+            "decisionBy": ""&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "EMPLOYEE",&#13;
+            "controllingJurisdiction": "GB",&#13;
+            "approvalStatus": "APPROVED",&#13;
+            "decisionDate": "2024-02-03",&#13;
+            "decisionBy": "gb.bankingsecrecy@db.com"&#13;
+        },&#13;
+        {&#13;
+            "requestedLocation": "IN",&#13;
+            "regulatoryDataCategory": "GERMAN_AFC_AML_RECORDS",&#13;
+            "controllingJurisdiction": "GB",&#13;
+            "approvalStatus": "NOT_REQUIRED",&#13;
+            "decisionDate": "2024-02-01",&#13;
+            "decisionBy": "SYSTEM"&#13;
+        }&#13;
+    ]&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>49a6ceb6835a121071719370ceaad3d3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:40</sys_created_on>
+        <sys_id>59a6ceb6835a121071719370ceaad3da</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 20:18:29</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"nar","children":[],"type":"string","jpath":"$.nar","previewValue":"99999-9"},{"name":"requestName","children":[],"type":"string","jpath":"$.requestName","previewValue":"99999-9.10"},{"name":"requestUri","children":[],"type":"string","jpath":"$.requestUri","previewValue":"/residency/request/99999-9.10"},{"name":"requestCreated","children":[],"type":"string","jpath":"$.requestCreated","previewValue":"2024-01-01"},{"name":"requestSubmitted","children":[],"type":"string","jpath":"$.requestSubmitted","previewValue":"2024-01-10"},{"name":"baoApprovalDate","children":[],"type":"string","jpath":"$.baoApprovalDate","previewValue":"2024-02-01"},{"name":"itaoRequestor","children":[],"type":"string","jpath":"$.itaoRequestor","previewValue":"99999-9.itao@db.com"},{"name":"baoApprover","children":[],"type":"string","jpath":"$.baoApprover","previewValue":"99999-9.bao@db.com"},{"name":"approvals","children":[{"name":"approvals_object","children":[{"name":"requestedLocation","children":[],"type":"string","jpath":"$.approvals[*].requestedLocation","previewValue":"EU"},{"name":"regulatoryDataCategory","children":[],"type":"string","jpath":"$.approvals[*].regulatoryDataCategory","previewValue":"PERSONAL"},{"name":"controllingJurisdiction","children":[],"type":"string","jpath":"$.approvals[*].controllingJurisdiction","previewValue":"DE"},{"name":"approvalStatus","children":[],"type":"string","jpath":"$.approvals[*].approvalStatus","previewValue":"NOT_REQUIRED"},{"name":"decisionDate","children":[],"type":"string","jpath":"$.approvals[*].decisionDate","previewValue":"2024-02-01"},{"name":"decisionBy","children":[],"type":"string","jpath":"$.approvals[*].decisionBy","previewValue":"SYSTEM"}],"type":"object","jpath":"$.approvals[*]","previewValue":""}],"type":"array.object","jpath":"$.approvals[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_49a6ceb6835a121071719370ceaad3d3^id=49a6ceb6835a121071719370ceaad3d3"/>
+    <sys_element_mapping action="delete_multiple" query="id=49a6ceb6835a121071719370ceaad3d3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>49a6ceb6835a121071719370ceaad3d3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:40</sys_created_on>
+        <sys_id>d5a6ceb6835a121071719370ceaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>49a6ceb6835a121071719370ceaad3d3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:40</sys_created_on>
+        <sys_id>15a6ceb6835a121071719370ceaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8393142d-1362-4ce5-a0ed-70126eb2ad55].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>49a6ceb6835a121071719370ceaad3d3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:40</sys_created_on>
+        <sys_id>51a6ceb6835a121071719370ceaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=49a6ceb6835a121071719370ceaad3d3"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=49a6ceb6835a121071719370ceaad3d3"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=49a6ceb6835a121071719370ceaad3d3^sys_idNOT INb1cc8e76839a121071719370ceaad32f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD71cc8e76679a121005f72052d8e7582e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>159ec28697511110e5a61c800153afff</scope_name>
+        <serialized_content>{"FlowDesigner:FD71cc8e76679a121005f72052d8e7582e":{"requestName":"String","requestName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestName\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"309ab170-5cba-4bb1-9dd8-b828fb3f7e6e\"}"},"itaoRequestor":"String","itaoRequestor.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"itaoRequestor\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"e1b388be-d019-45be-93d0-9ac13e6c1ee1\"}"},"requestCreated":"String","requestCreated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestCreated\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"551d9bb6-48be-4f38-b235-4e131bd89c6d\"}"},"approvals":[{"$0_approvals":{"approvalStatus":"String","approvalStatus.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"approvalStatus\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"5269bb18-2be4-4ea7-90bc-5e9a18bae2af\"}"},"regulatoryDataCategory":"String","regulatoryDataCategory.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"regulatoryDataCategory\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"398fa0e8-abfd-48c7-a7b2-ddbd334c9061\"}"},"requestedLocation":"String","requestedLocation.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestedLocation\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2c2ce1ab-0c2d-4e11-9c27-d7960297b91c\"}"},"controllingJurisdiction":"String","controllingJurisdiction.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"controllingJurisdiction\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"137c01f5-44b7-4128-b778-1e6ba9dc3486\"}"},"decisionBy":"String","decisionBy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"decisionBy\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"b3236b7a-10aa-466d-8619-826f07e6b6ad\"}"},"decisionDate":"String","decisionDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"decisionDate\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"61e463d4-46f9-4a8a-b8b4-420eff52c047\"}"}}}],"approvals.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"approvals\",\"mandatory\":\"false\",\"child_name\":\"approvals_object\",\"uiUniqueId\":\"ba73e637-45a3-47e9-9bc3-35ec6592ebdb\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"approvals_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"9\",\"max_length\":\"0\",\"child_uiUniqueId\":\"bbb350df-4cca-43a9-a052-3af6ec50e6e0\"}"},"baoApprovalDate":"String","baoApprovalDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"baoApprovalDate\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"0ce189cc-b5f3-40ab-8e0d-3689e3b4cdf8\"}"},"baoApprover":"String","baoApprover.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"baoApprover\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"c52db4a0-f51d-4d95-9e07-d1869e84783b\"}"},"requestUri":"String","requestUri.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestUri\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"880027da-3142-4d99-9f1c-d41faeea7f2f\"}"},"nar":"String","nar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nar\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"603bcf26-dfef-4f7c-80b4-11d0b34885a1\"}"},"requestSubmitted":"String","requestSubmitted.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"requestSubmitted\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"429bde1a-3e53-4be1-b442-bd7fdebfddfa\"}"}},"FlowDesigner:FD71cc8e76679a121005f72052d8e7582e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"cff7c455-02da-418f-baa5-007ff8fa06e6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD71cc8e76679a121005f72052d8e7582e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 20:18:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35cc8e76839a121071719370ceaad32e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:38:20</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD71cc8e76679a121005f72052d8e7582e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=cff7c455-02da-418f-baa5-007ff8fa06e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step - EDS Get Approvals">49a6ceb6835a121071719370ceaad3d3</model>
+        <model_id>49a6ceb6835a121071719370ceaad3d3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_49a6ceb6835a121071719370ceaad3d3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 20:18:28</sys_created_on>
+        <sys_id>b1cc8e76839a121071719370ceaad32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 20:18:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=49a6ceb6835a121071719370ceaad3d3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_49a6ceb6835a121071719370ceaad3d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 20:18:29</sys_created_on>
+        <sys_id>42cc8e76839a121071719370ceaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 20:18:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</action>
+        <cid>fa3b7e93-17f8-452b-aa0f-0d6dface13fa</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step - Spiderman Test</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:30</sys_created_on>
+        <sys_id>9b3f117683d2121071719370ceaad3d2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:38:20</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9b3f117683d2121071719370ceaad3d2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b3f117683d2121071719370ceaad3d2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>273f517683d2121071719370ceaad31a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"name","children":[],"type":"string","jpath":"$.name","previewValue":"Peter parker"},{"name":"heroName","children":[],"type":"string","jpath":"$.heroName","previewValue":"Spiderman"},{"name":"friends","children":[{"name":"friends_object","children":[{"name":"heroName","children":[],"type":"string","jpath":"$.friends[*].heroName","previewValue":"Deadpool"},{"name":"skills","children":[{"name":"skills_string","children":[],"type":"string","jpath":"$.friends[*].skills[*]","previewValue":"Martial artist"}],"type":"array.string","jpath":"$.friends[*].skills[*]","previewValue":""}],"type":"object","jpath":"$.friends[*]","previewValue":""}],"type":"array.object","jpath":"$.friends[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b3f117683d2121071719370ceaad3d2</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>633f517683d2121071719370ceaad31b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:37:22</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b3f117683d2121071719370ceaad3d2</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>af3f517683d2121071719370ceaad31a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <value>{"name":"Peter parker","heroName":"Spiderman","friends":[{"heroName":"Deadpool","skills":["Martial artist","Assassin"]},{"heroName":"Hulk","skills":["Superhuman Speed","Superhuman Strength"]},{"heroName":"Wolverine","skills":["Retractable bone claws","Superhuman senses"]}]}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_9b3f117683d2121071719370ceaad3d2^id=9b3f117683d2121071719370ceaad3d2"/>
+    <sys_element_mapping action="delete_multiple" query="id=9b3f117683d2121071719370ceaad3d2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>9b3f117683d2121071719370ceaad3d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>e33f117683d2121071719370ceaad3e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>9b3f117683d2121071719370ceaad3d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>a73f117683d2121071719370ceaad3e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>9b3f117683d2121071719370ceaad3d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>233f117683d2121071719370ceaad3e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8393142d-1362-4ce5-a0ed-70126eb2ad55].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>9b3f117683d2121071719370ceaad3d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>2b3f117683d2121071719370ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=9b3f117683d2121071719370ceaad3d2"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9b3f117683d2121071719370ceaad3d2"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9b3f117683d2121071719370ceaad3d2^sys_idNOT IN1b3f117683d2121071719370ceaad3d8"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1b3f117615d2121076d33201bde7a5d6</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>159ec28697511110e5a61c800153afff</scope_name>
+        <serialized_content>{"FlowDesigner:FD1b3f117615d2121076d33201bde7a5d6":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9d549eeb-fb53-4715-8068-69c2d1e6c698\"}"},"heroName":"String","heroName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"heroName\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"9b9305ac-f4ea-43bf-b930-2182be49b305\"}"},"friends":[{"$1_friends":{"skills":["Any"],"skills.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"skills\",\"mandatory\":\"false\",\"child_name\":\"skills_string\",\"uiUniqueId\":\"b448f835-71e8-4b57-86b6-639efd8b04e2\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"skills_string\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a6bbd6be-6630-4d2a-996b-9bf78a21b72b\"}"},"heroName":"String","heroName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"heroName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ec6b38f5-f206-4ad9-9e08-ff2243ff74e7\"}"}}}],"friends.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"friends\",\"mandatory\":\"false\",\"child_name\":\"friends_object\",\"uiUniqueId\":\"0531e468-373c-4a5a-a485-00c8bc35d262\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"friends_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"7cbabd48-50b0-44b1-b2d7-14a5c67e48ea\"}"}},"FlowDesigner:FD1b3f117615d2121076d33201bde7a5d6.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"028c1412-a38f-46e4-a5d3-edb45b118056\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1b3f117615d2121076d33201bde7a5d6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f3f117683d2121071719370ceaad3d6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 21:38:20</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD1b3f117615d2121076d33201bde7a5d6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=028c1412-a38f-46e4-a5d3-edb45b118056</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step - Spiderman Test">9b3f117683d2121071719370ceaad3d2</model>
+        <model_id>9b3f117683d2121071719370ceaad3d2</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9b3f117683d2121071719370ceaad3d2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:30</sys_created_on>
+        <sys_id>1b3f117683d2121071719370ceaad3d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9b3f117683d2121071719370ceaad3d2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9b3f117683d2121071719370ceaad3d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 16:59:31</sys_created_on>
+        <sys_id>e33f117683d2121071719370ceaad3e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 16:59:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=3937f4d297626110e5a61c800153af1a^sys_idNOT INa7868ab6835a121071719370ceaad3c5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a1abc35b-9b2d-4355-b67b-b82fc5799db9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>source_data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>source_data</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</model>
+        <model_id>3937f4d297626110e5a61c800153af1a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_3937f4d297626110e5a61c800153af1a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:16</sys_created_on>
+        <sys_id>a7868ab6835a121071719370ceaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a7868ab6835a121071719370ceaad3c5"/>
     <sys_hub_action_output action="delete_multiple" query="model=3937f4d297626110e5a61c800153af1a^sys_idNOT IN02ef864897322110e5a61c800153af1c,82ef864897322110e5a61c800153af16"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -213,7 +1247,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="DW Test A ">3937f4d297626110e5a61c800153af1a</model>
+        <model display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</model>
         <model_id>3937f4d297626110e5a61c800153af1a</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_3937f4d297626110e5a61c800153af1a</name>
@@ -236,14 +1270,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-09 15:26:48</sys_created_on>
         <sys_id>02ef864897322110e5a61c800153af1c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-09 15:26:48</sys_updated_on>
+        <sys_updated_on>2024-12-09 21:38:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -300,7 +1334,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="DW Test A ">3937f4d297626110e5a61c800153af1a</model>
+        <model display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</model>
         <model_id>3937f4d297626110e5a61c800153af1a</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_3937f4d297626110e5a61c800153af1a</name>
@@ -348,7 +1382,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=3937f4d297626110e5a61c800153af1a"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=3937f4d297626110e5a61c800153af1a^sys_idNOT IN5eef864897322110e5a61c800153af25"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="DW Test A ">3937f4d297626110e5a61c800153af1a</action_type_id>
+        <action_type_id display_value="DW Test JSON Parser">3937f4d297626110e5a61c800153af1a</action_type_id>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-09 15:26:48</sys_created_on>
         <sys_id>5eef864897322110e5a61c800153af25</sys_id>
@@ -357,9 +1391,30 @@
         <sys_updated_on>2023-05-09 15:26:48</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=5eef864897322110e5a61c800153af25"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_3937f4d297626110e5a61c800153af1a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>source_data</element>
+        <help/>
+        <hint/>
+        <label>source_data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_3937f4d297626110e5a61c800153af1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-09 19:51:17</sys_created_on>
+        <sys_id>6b868ab6835a121071719370ceaad3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dave Spoke" source="x_520111_dave_spok">159ec28697511110e5a61c800153afff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dave Spoke">159ec28697511110e5a61c800153afff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-09 19:51:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_3937f4d297626110e5a61c800153af1a"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_3937f4d297626110e5a61c800153af1a^sys_idNOT IN02ef864897322110e5a61c800153af1b,9eef864897322110e5a61c800153af20"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
